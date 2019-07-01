@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+#mapParent{
+  height: 100%;
+  width: 100%;
+}
+
+#mapid{
+  height: 94vh;
+  width: 83.9vw;
+}
+
+/*fix pls*/
+#layers{
+  background: white;
+  position: fixed;
+  top: 500px;
+  right: 20px;
+  z-index: 400;
+  width: 300px;
+  height: 160px;
+}
+
+.detailButton{
+  text-decoration: none;
+  color: white !important;
+  margin-top: 5px;
+}
+
+.detailButton:link{
+  text-decoration: none;
+  color: white;
+  margin-top: 5px;
+
+}
+
+.detailButton:hover{
+  text-decoration: none;
+  color: white;
+  margin-top: 5px;
+
+}
+
+
+.legend-field{
+
+  background: white;
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  z-index: 400;
+  width: 410px;
+  height: 50px;
+  text-align: left;
+}
+
+.legend-label{
+  margin: 5px;
+  font-weight: bold;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  color: #363636;
+}
+
+#color-and-text{
+  float: left;
+  margin-right: 20px;
+}
+
+.small-box {
+  float: left;
+  width: 15px;
+  height: 15px;
+  margin: 5px;
+}
+
+#onstreetIcon{
+  float: left;
+  margin: 5px;
+}
+
+.blue {
+  background: #91bfdb;
+}
+
+.orange {
+  background: #fdae61;
+}
+
+.red {
+  background: #d7191c;
+}
+
+.purple {
+  background: #762a83;
+}
+
+#details-button{
+  float: right;
+}
+
+.switch-field{
+  position: fixed;
+  top: 50px;
+  left: 300px;
+  z-index: 400;
+  width: 100px;
+  height: 60px;
+}
+
+.switch-reverse-field{
+  position: fixed;
+  top: 50px;
+  left: 390px;
+  z-index: 400;
+  width: 160px;
+  height: 60px;
+}
+
+
+.heat-label{
+  margin: 5px;
+  font-weight: bold;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  color: #363636;
+  float: left;
+}
+
+/* Cluster stuff */
+.marker-cluster-small {
+  background-color: rgba(204,121,167,0.8);
+
+}
+.marker-cluster-small div {
+  background-color: rgba(204,121,167,0.8);
+}
+
+.marker-cluster-medium {
+  background-color: rgba(204,121,167,0.8);
+}
+.marker-cluster-medium div {
+  background-color: rgba(204,121,167,0.8);
+}
+
+.marker-cluster-large {
+  background-color: rgba(204,121,167,0.8);
+}
+.marker-cluster-large div {
+  background-color: rgba(204,121,167,0.8);
+}
+
+/* IE 6-8 fallback colors */
+.leaflet-oldie .marker-cluster-small {
+  background-color: rgb(204,121,167);
+}
+.leaflet-oldie .marker-cluster-small div {
+  background-color: rgb(204,121,167);
+}
+
+.leaflet-oldie .marker-cluster-medium {
+  background-color: rgb(204,121,167);
+}
+.leaflet-oldie .marker-cluster-medium div {
+  background-color: rgb(204,121,167);
+}
+
+.leaflet-oldie .marker-cluster-large {
+  background-color: rgb(204,121,167);
+}
+.leaflet-oldie .marker-cluster-large div {
+  background-color: rgb(200,100,100);
+}
+
+.marker-cluster {
+  background-clip: padding-box;
+  border-radius: 20px;
+}
+.marker-cluster div {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  margin-top: 5px;
+
+  text-align: center;
+  border-radius: 15px;
+  font: 12px "Helvetica Neue", Arial, Helvetica, sans-serif;
+  color: white;
+}
+.marker-cluster span {
+  line-height: 30px;
+}
+
+html {
+  background: #878476;
+}
+
+.container {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  height: 40px;
+  margin: auto;
+  text-align: center;
+}
+
+/** Switch
+-------------------------------------*/
+
+.switch input {
+  position: absolute;
+  opacity: 0;
+}
+
+/**
+ * 1. Adjust this to size
+ */
+
+.switch {
+  display: inline-block;
+  font-size: 20px; /* 1 */
+  height: 1em;
+  width: 2em;
+  background: #363636;
+  border-radius: 1em;
+  margin-left: 5px;
+  float: left;
+}
+
+.switch div {
+  height: 1em;
+  width: 1em;
+  border-radius: 1em;
+  background: #FFF;
+  box-shadow: 0 0.1em 0.3em rgba(0,0,0,0.3);
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.switch input:checked + div {
+  -webkit-transform: translate3d(100%, 0, 0);
+  -moz-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+}
+
+
+/* Tooltip styling */
+[data-tooltip]:before {
+  content: attr(data-tooltip);
+  display: none;
+  position: absolute;
+  background: #000;
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 14px;
+  line-height: 1.4;
+  min-width: 100px;
+  text-align: center;
+  border-radius: 4px;
+}
+/* Dynamic horizontal centering */
+[data-tooltip-position="top"]:before,
+[data-tooltip-position="bottom"]:before {
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+/* Dynamic vertical centering */
+[data-tooltip-position="right"]:before,
+[data-tooltip-position="left"]:before {
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+[data-tooltip-position="top"]:before {
+  bottom: 100%;
+  margin-bottom: 6px;
+}
+[data-tooltip-position="right"]:before {
+  left: 100%;
+  margin-left: 6px;
+}
+[data-tooltip-position="bottom"]:before {
+  top: 100%;
+  margin-top: 6px;
+}
+[data-tooltip-position="left"]:before {
+  right: 100%;
+  margin-right: 6px;
+}
+
+/* Tooltip arrow styling/placement */
+[data-tooltip]:after {
+  content: '';
+  display: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+/* Dynamic horizontal centering for the tooltip */
+[data-tooltip-position="top"]:after,
+[data-tooltip-position="bottom"]:after {
+  left: 50%;
+  margin-left: -6px;
+}
+/* Dynamic vertical centering for the tooltip */
+[data-tooltip-position="right"]:after,
+[data-tooltip-position="left"]:after {
+  top: 50%;
+  margin-top: -6px;
+}
+[data-tooltip-position="top"]:after {
+  bottom: 100%;
+  border-width: 6px 6px 0;
+  border-top-color: #000;
+}
+[data-tooltip-position="right"]:after {
+  left: 100%;
+  border-width: 6px 6px 6px 0;
+  border-right-color: #000;
+}
+
+/* Show the tooltip when hovering */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  display: block;
+  z-index: 999999999999999999999;
+}
+
+@media print {
+  .printable {
+    display: block;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 15px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .notPrintable {
+    display: none;
+  }
+}
+

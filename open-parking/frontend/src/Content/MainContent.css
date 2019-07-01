@@ -1,0 +1,64 @@
+.MainContent {
+  float: left;
+  height: 100%;
+
+  /*padding: 20px;
+   */
+  position: absolute;
+  left: 250px;
+
+  position: fixed;
+  left: 250px;
+  max-width: 100%;
+  min-width: 1111px;
+
+
+}
+
+.mainChild {
+  position: relative;
+  max-height: 600px;
+}
+
+.active {
+  background-color: #fff;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.2);
+}
+
+.nav-link, .nav-link:hover, .nav-link:focus {
+  color: #000;
+}
+
+@media print {
+  .printable {
+    display: block;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    margin: auto;
+    margin-top: 0px !important;
+    border: 1px solid;
+
+  }
+  .notPrintable {
+    display: none;
+  }
+
+  tr {
+      -webkit-print-color-adjust: exact;
+  }
+  td {
+      -webkit-print-color-adjust: exact;
+  }
+  th {
+      -webkit-print-color-adjust: exact;
+  }
+
+
+
+
+}

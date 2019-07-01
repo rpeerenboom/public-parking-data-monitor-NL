@@ -1,0 +1,7 @@
+django
+djangorestframework
+shapely
+django-cors-headers
+coreapi
+requests
+gunicorn

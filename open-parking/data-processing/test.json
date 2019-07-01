@@ -1,0 +1,11 @@
+{
+  "ParkingFacilities": [
+    {
+      "limitedAccess": false,
+      "dynamicDataUrl": "http://opd.it-t.nl/Data/parkingdata/v1/arnhem/dynamic/8ef842d3-f5f2-4679-a074-9096f4000db7.json",
+      "staticDataUrl": "https://npropendata.rdw.nl/parkingdata/v2/static/8ef842d3-f5f2-4679-a074-9096f4000db7",
+      "name": "Garage Centraal (Arnhem)",
+      "uuid": "8ef842d3-f5f2-4679-a074-9096f4000db7"
+    }
+  ]
+}

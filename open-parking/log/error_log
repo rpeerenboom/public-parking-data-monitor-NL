@@ -1,0 +1,2119 @@
+[2018-10-21 22:55:36 +0200] [6317] [INFO] Starting gunicorn 19.9.0
+[2018-10-21 22:55:36 +0200] [6317] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (6317)
+[2018-10-21 22:55:36 +0200] [6317] [INFO] Using worker: sync
+[2018-10-21 22:55:36 +0200] [6321] [INFO] Booting worker with pid: 6321
+[2018-10-21 22:55:36 +0200] [6323] [INFO] Booting worker with pid: 6323
+[2018-10-21 22:55:36 +0200] [6325] [INFO] Booting worker with pid: 6325
+[2018-10-21 22:58:21 +0200] [6317] [INFO] Handling signal: term
+[2018-10-21 20:58:21 +0000] [6323] [INFO] Worker exiting (pid: 6323)
+[2018-10-21 20:58:21 +0000] [6325] [INFO] Worker exiting (pid: 6325)
+[2018-10-21 20:58:21 +0000] [6321] [INFO] Worker exiting (pid: 6321)
+[2018-10-21 22:58:22 +0200] [6317] [INFO] Shutting down: Master
+[2018-10-21 22:58:22 +0200] [6459] [INFO] Starting gunicorn 19.9.0
+[2018-10-21 22:58:22 +0200] [6459] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (6459)
+[2018-10-21 22:58:22 +0200] [6459] [INFO] Using worker: sync
+[2018-10-21 22:58:22 +0200] [6462] [INFO] Booting worker with pid: 6462
+[2018-10-21 22:58:22 +0200] [6463] [INFO] Booting worker with pid: 6463
+[2018-10-21 22:58:22 +0200] [6466] [INFO] Booting worker with pid: 6466
+[2018-10-21 23:30:02 +0200] [6459] [INFO] Handling signal: term
+[2018-10-21 21:30:02 +0000] [6466] [INFO] Worker exiting (pid: 6466)
+[2018-10-21 21:30:02 +0000] [6463] [INFO] Worker exiting (pid: 6463)
+[2018-10-21 21:30:02 +0000] [6462] [INFO] Worker exiting (pid: 6462)
+[2018-10-21 23:30:02 +0200] [6459] [INFO] Shutting down: Master
+[2018-10-21 23:30:02 +0200] [7103] [INFO] Starting gunicorn 19.9.0
+[2018-10-21 23:30:02 +0200] [7103] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (7103)
+[2018-10-21 23:30:02 +0200] [7103] [INFO] Using worker: sync
+[2018-10-21 23:30:02 +0200] [7107] [INFO] Booting worker with pid: 7107
+[2018-10-21 23:30:02 +0200] [7109] [INFO] Booting worker with pid: 7109
+[2018-10-21 23:30:02 +0200] [7110] [INFO] Booting worker with pid: 7110
+[2018-10-22 15:35:09 +0200] [7103] [INFO] Handling signal: term
+[2018-10-22 13:35:09 +0000] [7110] [INFO] Worker exiting (pid: 7110)
+[2018-10-22 13:35:09 +0000] [7107] [INFO] Worker exiting (pid: 7107)
+[2018-10-22 13:35:09 +0000] [7109] [INFO] Worker exiting (pid: 7109)
+[2018-10-22 15:35:09 +0200] [7103] [INFO] Shutting down: Master
+[2018-10-22 15:35:09 +0200] [31008] [INFO] Starting gunicorn 19.9.0
+[2018-10-22 15:35:09 +0200] [31008] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (31008)
+[2018-10-22 15:35:09 +0200] [31008] [INFO] Using worker: sync
+[2018-10-22 15:35:09 +0200] [31012] [INFO] Booting worker with pid: 31012
+[2018-10-22 15:35:09 +0200] [31014] [INFO] Booting worker with pid: 31014
+[2018-10-22 15:35:09 +0200] [31015] [INFO] Booting worker with pid: 31015
+[2018-10-22 13:35:13 +0000] [31012] [ERROR] Error handling request /parkingdata/html/a63813f7-8dda-43e9-bd52-aed6675b88a8/
+Traceback (most recent call last):
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 498, in resolve
+    for pattern in self.url_patterns:
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 540, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/openParking/urls.py", line 23, in <module>
+    url(r'^', include('api.urls')), # points to urls.py in api
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/api/urls.py", line 3, in <module>
+    from .views import IdView, UuidView, RectangleView, AreaView, \
+  File "/var/www/open-parking/django-server/openParking/api/views.py", line 210
+    elif len(json["parkingFacilityInformation"]["operator"]["administrativeAddresses"][0]["emailAddresses"]) != 0:
+       ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/deprecation.py", line 95, in __call__
+    response = self.get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 37, in inner
+    response = response_for_exception(request, exc)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 87, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 125, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 553, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/openParking/urls.py", line 23, in <module>
+    url(r'^', include('api.urls')), # points to urls.py in api
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/api/urls.py", line 3, in <module>
+    from .views import IdView, UuidView, RectangleView, AreaView, \
+  File "/var/www/open-parking/django-server/openParking/api/views.py", line 210
+    elif len(json["parkingFacilityInformation"]["operator"]["administrativeAddresses"][0]["emailAddresses"]) != 0:
+       ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/deprecation.py", line 95, in __call__
+    response = self.get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 37, in inner
+    response = response_for_exception(request, exc)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 87, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 125, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 553, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/openParking/urls.py", line 23, in <module>
+    url(r'^', include('api.urls')), # points to urls.py in api
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/api/urls.py", line 3, in <module>
+    from .views import IdView, UuidView, RectangleView, AreaView, \
+  File "/var/www/open-parking/django-server/openParking/api/views.py", line 210
+    elif len(json["parkingFacilityInformation"]["operator"]["administrativeAddresses"][0]["emailAddresses"]) != 0:
+       ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/deprecation.py", line 95, in __call__
+    response = self.get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 37, in inner
+    response = response_for_exception(request, exc)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 87, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 125, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 553, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/openParking/urls.py", line 23, in <module>
+    url(r'^', include('api.urls')), # points to urls.py in api
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/api/urls.py", line 3, in <module>
+    from .views import IdView, UuidView, RectangleView, AreaView, \
+  File "/var/www/open-parking/django-server/openParking/api/views.py", line 210
+    elif len(json["parkingFacilityInformation"]["operator"]["administrativeAddresses"][0]["emailAddresses"]) != 0:
+       ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/deprecation.py", line 95, in __call__
+    response = self.get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 37, in inner
+    response = response_for_exception(request, exc)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 87, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 125, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 553, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/openParking/urls.py", line 23, in <module>
+    url(r'^', include('api.urls')), # points to urls.py in api
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/api/urls.py", line 3, in <module>
+    from .views import IdView, UuidView, RectangleView, AreaView, \
+  File "/var/www/open-parking/django-server/openParking/api/views.py", line 210
+    elif len(json["parkingFacilityInformation"]["operator"]["administrativeAddresses"][0]["emailAddresses"]) != 0:
+       ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/deprecation.py", line 95, in __call__
+    response = self.get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 37, in inner
+    response = response_for_exception(request, exc)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 87, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 125, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 553, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/openParking/urls.py", line 23, in <module>
+    url(r'^', include('api.urls')), # points to urls.py in api
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/api/urls.py", line 3, in <module>
+    from .views import IdView, UuidView, RectangleView, AreaView, \
+  File "/var/www/open-parking/django-server/openParking/api/views.py", line 210
+    elif len(json["parkingFacilityInformation"]["operator"]["administrativeAddresses"][0]["emailAddresses"]) != 0:
+       ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/deprecation.py", line 95, in __call__
+    response = self.get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 37, in inner
+    response = response_for_exception(request, exc)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 87, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 125, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 553, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/openParking/urls.py", line 23, in <module>
+    url(r'^', include('api.urls')), # points to urls.py in api
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/api/urls.py", line 3, in <module>
+    from .views import IdView, UuidView, RectangleView, AreaView, \
+  File "/var/www/open-parking/django-server/openParking/api/views.py", line 210
+    elif len(json["parkingFacilityInformation"]["operator"]["administrativeAddresses"][0]["emailAddresses"]) != 0:
+       ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/deprecation.py", line 95, in __call__
+    response = self.get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 37, in inner
+    response = response_for_exception(request, exc)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 87, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 125, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 553, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/openParking/urls.py", line 23, in <module>
+    url(r'^', include('api.urls')), # points to urls.py in api
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/api/urls.py", line 3, in <module>
+    from .views import IdView, UuidView, RectangleView, AreaView, \
+  File "/var/www/open-parking/django-server/openParking/api/views.py", line 210
+    elif len(json["parkingFacilityInformation"]["operator"]["administrativeAddresses"][0]["emailAddresses"]) != 0:
+       ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/deprecation.py", line 95, in __call__
+    response = self.get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 37, in inner
+    response = response_for_exception(request, exc)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 87, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 125, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 553, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/openParking/urls.py", line 23, in <module>
+    url(r'^', include('api.urls')), # points to urls.py in api
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/api/urls.py", line 3, in <module>
+    from .views import IdView, UuidView, RectangleView, AreaView, \
+  File "/var/www/open-parking/django-server/openParking/api/views.py", line 210
+    elif len(json["parkingFacilityInformation"]["operator"]["administrativeAddresses"][0]["emailAddresses"]) != 0:
+       ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/deprecation.py", line 95, in __call__
+    response = self.get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 37, in inner
+    response = response_for_exception(request, exc)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 87, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 125, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 553, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/openParking/urls.py", line 23, in <module>
+    url(r'^', include('api.urls')), # points to urls.py in api
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/api/urls.py", line 3, in <module>
+    from .views import IdView, UuidView, RectangleView, AreaView, \
+  File "/var/www/open-parking/django-server/openParking/api/views.py", line 210
+    elif len(json["parkingFacilityInformation"]["operator"]["administrativeAddresses"][0]["emailAddresses"]) != 0:
+       ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/gunicorn/workers/sync.py", line 176, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/wsgi.py", line 146, in __call__
+    response = self.get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/base.py", line 81, in get_response
+    response = self._middleware_chain(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 37, in inner
+    response = response_for_exception(request, exc)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 87, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 125, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 553, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/openParking/urls.py", line 23, in <module>
+    url(r'^', include('api.urls')), # points to urls.py in api
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/api/urls.py", line 3, in <module>
+    from .views import IdView, UuidView, RectangleView, AreaView, \
+  File "/var/www/open-parking/django-server/openParking/api/views.py", line 210
+    elif len(json["parkingFacilityInformation"]["operator"]["administrativeAddresses"][0]["emailAddresses"]) != 0:
+       ^
+SyntaxError: invalid syntax
+[2018-10-22 13:35:15 +0000] [31012] [ERROR] Error handling request /parkingdata/html/a63813f7-8dda-43e9-bd52-aed6675b88a8/
+Traceback (most recent call last):
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 498, in resolve
+    for pattern in self.url_patterns:
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 540, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/openParking/urls.py", line 23, in <module>
+    url(r'^', include('api.urls')), # points to urls.py in api
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/api/urls.py", line 3, in <module>
+    from .views import IdView, UuidView, RectangleView, AreaView, \
+  File "/var/www/open-parking/django-server/openParking/api/views.py", line 210
+    elif len(json["parkingFacilityInformation"]["operator"]["administrativeAddresses"][0]["emailAddresses"]) != 0:
+       ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/deprecation.py", line 95, in __call__
+    response = self.get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 37, in inner
+    response = response_for_exception(request, exc)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 87, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 125, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 553, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/openParking/urls.py", line 23, in <module>
+    url(r'^', include('api.urls')), # points to urls.py in api
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/api/urls.py", line 3, in <module>
+    from .views import IdView, UuidView, RectangleView, AreaView, \
+  File "/var/www/open-parking/django-server/openParking/api/views.py", line 210
+    elif len(json["parkingFacilityInformation"]["operator"]["administrativeAddresses"][0]["emailAddresses"]) != 0:
+       ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/deprecation.py", line 95, in __call__
+    response = self.get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 37, in inner
+    response = response_for_exception(request, exc)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 87, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 125, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 553, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/openParking/urls.py", line 23, in <module>
+    url(r'^', include('api.urls')), # points to urls.py in api
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/api/urls.py", line 3, in <module>
+    from .views import IdView, UuidView, RectangleView, AreaView, \
+  File "/var/www/open-parking/django-server/openParking/api/views.py", line 210
+    elif len(json["parkingFacilityInformation"]["operator"]["administrativeAddresses"][0]["emailAddresses"]) != 0:
+       ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/deprecation.py", line 95, in __call__
+    response = self.get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 37, in inner
+    response = response_for_exception(request, exc)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 87, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 125, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 553, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/openParking/urls.py", line 23, in <module>
+    url(r'^', include('api.urls')), # points to urls.py in api
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/api/urls.py", line 3, in <module>
+    from .views import IdView, UuidView, RectangleView, AreaView, \
+  File "/var/www/open-parking/django-server/openParking/api/views.py", line 210
+    elif len(json["parkingFacilityInformation"]["operator"]["administrativeAddresses"][0]["emailAddresses"]) != 0:
+       ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/deprecation.py", line 95, in __call__
+    response = self.get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 37, in inner
+    response = response_for_exception(request, exc)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 87, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 125, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 553, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/openParking/urls.py", line 23, in <module>
+    url(r'^', include('api.urls')), # points to urls.py in api
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/api/urls.py", line 3, in <module>
+    from .views import IdView, UuidView, RectangleView, AreaView, \
+  File "/var/www/open-parking/django-server/openParking/api/views.py", line 210
+    elif len(json["parkingFacilityInformation"]["operator"]["administrativeAddresses"][0]["emailAddresses"]) != 0:
+       ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/deprecation.py", line 95, in __call__
+    response = self.get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 37, in inner
+    response = response_for_exception(request, exc)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 87, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 125, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 553, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/openParking/urls.py", line 23, in <module>
+    url(r'^', include('api.urls')), # points to urls.py in api
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/api/urls.py", line 3, in <module>
+    from .views import IdView, UuidView, RectangleView, AreaView, \
+  File "/var/www/open-parking/django-server/openParking/api/views.py", line 210
+    elif len(json["parkingFacilityInformation"]["operator"]["administrativeAddresses"][0]["emailAddresses"]) != 0:
+       ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/deprecation.py", line 95, in __call__
+    response = self.get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 37, in inner
+    response = response_for_exception(request, exc)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 87, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 125, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 553, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/openParking/urls.py", line 23, in <module>
+    url(r'^', include('api.urls')), # points to urls.py in api
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/api/urls.py", line 3, in <module>
+    from .views import IdView, UuidView, RectangleView, AreaView, \
+  File "/var/www/open-parking/django-server/openParking/api/views.py", line 210
+    elif len(json["parkingFacilityInformation"]["operator"]["administrativeAddresses"][0]["emailAddresses"]) != 0:
+       ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/deprecation.py", line 95, in __call__
+    response = self.get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 37, in inner
+    response = response_for_exception(request, exc)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 87, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 125, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 553, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/openParking/urls.py", line 23, in <module>
+    url(r'^', include('api.urls')), # points to urls.py in api
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/api/urls.py", line 3, in <module>
+    from .views import IdView, UuidView, RectangleView, AreaView, \
+  File "/var/www/open-parking/django-server/openParking/api/views.py", line 210
+    elif len(json["parkingFacilityInformation"]["operator"]["administrativeAddresses"][0]["emailAddresses"]) != 0:
+       ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/deprecation.py", line 95, in __call__
+    response = self.get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 37, in inner
+    response = response_for_exception(request, exc)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 87, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 125, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 553, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/openParking/urls.py", line 23, in <module>
+    url(r'^', include('api.urls')), # points to urls.py in api
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/api/urls.py", line 3, in <module>
+    from .views import IdView, UuidView, RectangleView, AreaView, \
+  File "/var/www/open-parking/django-server/openParking/api/views.py", line 210
+    elif len(json["parkingFacilityInformation"]["operator"]["administrativeAddresses"][0]["emailAddresses"]) != 0:
+       ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/deprecation.py", line 95, in __call__
+    response = self.get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 37, in inner
+    response = response_for_exception(request, exc)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 87, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 125, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 553, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/openParking/urls.py", line 23, in <module>
+    url(r'^', include('api.urls')), # points to urls.py in api
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/api/urls.py", line 3, in <module>
+    from .views import IdView, UuidView, RectangleView, AreaView, \
+  File "/var/www/open-parking/django-server/openParking/api/views.py", line 210
+    elif len(json["parkingFacilityInformation"]["operator"]["administrativeAddresses"][0]["emailAddresses"]) != 0:
+       ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/gunicorn/workers/sync.py", line 176, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/wsgi.py", line 146, in __call__
+    response = self.get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/base.py", line 81, in get_response
+    response = self._middleware_chain(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 37, in inner
+    response = response_for_exception(request, exc)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 87, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 125, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 553, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/openParking/urls.py", line 23, in <module>
+    url(r'^', include('api.urls')), # points to urls.py in api
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/api/urls.py", line 3, in <module>
+    from .views import IdView, UuidView, RectangleView, AreaView, \
+  File "/var/www/open-parking/django-server/openParking/api/views.py", line 210
+    elif len(json["parkingFacilityInformation"]["operator"]["administrativeAddresses"][0]["emailAddresses"]) != 0:
+       ^
+SyntaxError: invalid syntax
+[2018-10-22 13:35:55 +0000] [31012] [ERROR] Error handling request /parkingdata/html/a63813f7-8dda-43e9-bd52-aed6675b88a8/
+Traceback (most recent call last):
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 498, in resolve
+    for pattern in self.url_patterns:
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 540, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/openParking/urls.py", line 23, in <module>
+    url(r'^', include('api.urls')), # points to urls.py in api
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/api/urls.py", line 3, in <module>
+    from .views import IdView, UuidView, RectangleView, AreaView, \
+  File "/var/www/open-parking/django-server/openParking/api/views.py", line 210
+    elif len(json["parkingFacilityInformation"]["operator"]["administrativeAddresses"][0]["emailAddresses"]) != 0:
+       ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/deprecation.py", line 95, in __call__
+    response = self.get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 37, in inner
+    response = response_for_exception(request, exc)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 87, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 125, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 553, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/openParking/urls.py", line 23, in <module>
+    url(r'^', include('api.urls')), # points to urls.py in api
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/api/urls.py", line 3, in <module>
+    from .views import IdView, UuidView, RectangleView, AreaView, \
+  File "/var/www/open-parking/django-server/openParking/api/views.py", line 210
+    elif len(json["parkingFacilityInformation"]["operator"]["administrativeAddresses"][0]["emailAddresses"]) != 0:
+       ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/deprecation.py", line 95, in __call__
+    response = self.get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 37, in inner
+    response = response_for_exception(request, exc)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 87, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 125, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 553, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/openParking/urls.py", line 23, in <module>
+    url(r'^', include('api.urls')), # points to urls.py in api
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/api/urls.py", line 3, in <module>
+    from .views import IdView, UuidView, RectangleView, AreaView, \
+  File "/var/www/open-parking/django-server/openParking/api/views.py", line 210
+    elif len(json["parkingFacilityInformation"]["operator"]["administrativeAddresses"][0]["emailAddresses"]) != 0:
+       ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/deprecation.py", line 95, in __call__
+    response = self.get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 37, in inner
+    response = response_for_exception(request, exc)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 87, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 125, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 553, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/openParking/urls.py", line 23, in <module>
+    url(r'^', include('api.urls')), # points to urls.py in api
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/api/urls.py", line 3, in <module>
+    from .views import IdView, UuidView, RectangleView, AreaView, \
+  File "/var/www/open-parking/django-server/openParking/api/views.py", line 210
+    elif len(json["parkingFacilityInformation"]["operator"]["administrativeAddresses"][0]["emailAddresses"]) != 0:
+       ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/deprecation.py", line 95, in __call__
+    response = self.get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 37, in inner
+    response = response_for_exception(request, exc)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 87, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 125, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 553, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/openParking/urls.py", line 23, in <module>
+    url(r'^', include('api.urls')), # points to urls.py in api
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/api/urls.py", line 3, in <module>
+    from .views import IdView, UuidView, RectangleView, AreaView, \
+  File "/var/www/open-parking/django-server/openParking/api/views.py", line 210
+    elif len(json["parkingFacilityInformation"]["operator"]["administrativeAddresses"][0]["emailAddresses"]) != 0:
+       ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/deprecation.py", line 95, in __call__
+    response = self.get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 37, in inner
+    response = response_for_exception(request, exc)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 87, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 125, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 553, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/openParking/urls.py", line 23, in <module>
+    url(r'^', include('api.urls')), # points to urls.py in api
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/api/urls.py", line 3, in <module>
+    from .views import IdView, UuidView, RectangleView, AreaView, \
+  File "/var/www/open-parking/django-server/openParking/api/views.py", line 210
+    elif len(json["parkingFacilityInformation"]["operator"]["administrativeAddresses"][0]["emailAddresses"]) != 0:
+       ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/deprecation.py", line 95, in __call__
+    response = self.get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 37, in inner
+    response = response_for_exception(request, exc)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 87, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 125, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 553, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/openParking/urls.py", line 23, in <module>
+    url(r'^', include('api.urls')), # points to urls.py in api
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/api/urls.py", line 3, in <module>
+    from .views import IdView, UuidView, RectangleView, AreaView, \
+  File "/var/www/open-parking/django-server/openParking/api/views.py", line 210
+    elif len(json["parkingFacilityInformation"]["operator"]["administrativeAddresses"][0]["emailAddresses"]) != 0:
+       ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/deprecation.py", line 95, in __call__
+    response = self.get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 37, in inner
+    response = response_for_exception(request, exc)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 87, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 125, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 553, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/openParking/urls.py", line 23, in <module>
+    url(r'^', include('api.urls')), # points to urls.py in api
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/api/urls.py", line 3, in <module>
+    from .views import IdView, UuidView, RectangleView, AreaView, \
+  File "/var/www/open-parking/django-server/openParking/api/views.py", line 210
+    elif len(json["parkingFacilityInformation"]["operator"]["administrativeAddresses"][0]["emailAddresses"]) != 0:
+       ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/deprecation.py", line 95, in __call__
+    response = self.get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 37, in inner
+    response = response_for_exception(request, exc)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 87, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 125, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 553, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/openParking/urls.py", line 23, in <module>
+    url(r'^', include('api.urls')), # points to urls.py in api
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/api/urls.py", line 3, in <module>
+    from .views import IdView, UuidView, RectangleView, AreaView, \
+  File "/var/www/open-parking/django-server/openParking/api/views.py", line 210
+    elif len(json["parkingFacilityInformation"]["operator"]["administrativeAddresses"][0]["emailAddresses"]) != 0:
+       ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/deprecation.py", line 95, in __call__
+    response = self.get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 37, in inner
+    response = response_for_exception(request, exc)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 87, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 125, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 553, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/openParking/urls.py", line 23, in <module>
+    url(r'^', include('api.urls')), # points to urls.py in api
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/api/urls.py", line 3, in <module>
+    from .views import IdView, UuidView, RectangleView, AreaView, \
+  File "/var/www/open-parking/django-server/openParking/api/views.py", line 210
+    elif len(json["parkingFacilityInformation"]["operator"]["administrativeAddresses"][0]["emailAddresses"]) != 0:
+       ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/gunicorn/workers/sync.py", line 176, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/wsgi.py", line 146, in __call__
+    response = self.get_response(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/base.py", line 81, in get_response
+    response = self._middleware_chain(request)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 37, in inner
+    response = response_for_exception(request, exc)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 87, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/core/handlers/exception.py", line 125, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 553, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/openParking/urls.py", line 23, in <module>
+    url(r'^', include('api.urls')), # points to urls.py in api
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/var/www/open-parking/django-server/openParking/ve/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/open-parking/django-server/openParking/api/urls.py", line 3, in <module>
+    from .views import IdView, UuidView, RectangleView, AreaView, \
+  File "/var/www/open-parking/django-server/openParking/api/views.py", line 210
+    elif len(json["parkingFacilityInformation"]["operator"]["administrativeAddresses"][0]["emailAddresses"]) != 0:
+       ^
+SyntaxError: invalid syntax
+[2018-10-22 15:36:01 +0200] [31008] [INFO] Handling signal: term
+[2018-10-22 13:36:01 +0000] [31014] [INFO] Worker exiting (pid: 31014)
+[2018-10-22 13:36:01 +0000] [31015] [INFO] Worker exiting (pid: 31015)
+[2018-10-22 13:36:01 +0000] [31012] [INFO] Worker exiting (pid: 31012)
+[2018-10-22 15:36:01 +0200] [31008] [INFO] Shutting down: Master
+[2018-10-22 15:36:01 +0200] [31097] [INFO] Starting gunicorn 19.9.0
+[2018-10-22 15:36:01 +0200] [31097] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (31097)
+[2018-10-22 15:36:01 +0200] [31097] [INFO] Using worker: sync
+[2018-10-22 15:36:01 +0200] [31100] [INFO] Booting worker with pid: 31100
+[2018-10-22 15:36:01 +0200] [31101] [INFO] Booting worker with pid: 31101
+[2018-10-22 15:36:01 +0200] [31102] [INFO] Booting worker with pid: 31102
+[2018-10-22 15:36:50 +0200] [31097] [INFO] Handling signal: term
+[2018-10-22 13:36:50 +0000] [31101] [INFO] Worker exiting (pid: 31101)
+[2018-10-22 13:36:50 +0000] [31102] [INFO] Worker exiting (pid: 31102)
+[2018-10-22 13:36:50 +0000] [31100] [INFO] Worker exiting (pid: 31100)
+[2018-10-22 15:36:50 +0200] [31097] [INFO] Shutting down: Master
+[2018-10-22 15:36:51 +0200] [31124] [INFO] Starting gunicorn 19.9.0
+[2018-10-22 15:36:51 +0200] [31124] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (31124)
+[2018-10-22 15:36:51 +0200] [31124] [INFO] Using worker: sync
+[2018-10-22 15:36:51 +0200] [31128] [INFO] Booting worker with pid: 31128
+[2018-10-22 15:36:51 +0200] [31129] [INFO] Booting worker with pid: 31129
+[2018-10-22 15:36:51 +0200] [31132] [INFO] Booting worker with pid: 31132
+[2018-10-22 15:38:44 +0200] [31124] [INFO] Handling signal: term
+[2018-10-22 13:38:44 +0000] [31128] [INFO] Worker exiting (pid: 31128)
+[2018-10-22 13:38:44 +0000] [31132] [INFO] Worker exiting (pid: 31132)
+[2018-10-22 13:38:44 +0000] [31129] [INFO] Worker exiting (pid: 31129)
+[2018-10-22 15:38:45 +0200] [31124] [INFO] Shutting down: Master
+[2018-10-22 15:38:45 +0200] [31180] [INFO] Starting gunicorn 19.9.0
+[2018-10-22 15:38:45 +0200] [31180] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (31180)
+[2018-10-22 15:38:45 +0200] [31180] [INFO] Using worker: sync
+[2018-10-22 15:38:45 +0200] [31183] [INFO] Booting worker with pid: 31183
+[2018-10-22 15:38:45 +0200] [31185] [INFO] Booting worker with pid: 31185
+[2018-10-22 15:38:45 +0200] [31187] [INFO] Booting worker with pid: 31187
+[2018-10-22 15:39:32 +0200] [31180] [INFO] Handling signal: term
+[2018-10-22 13:39:32 +0000] [31187] [INFO] Worker exiting (pid: 31187)
+[2018-10-22 13:39:32 +0000] [31183] [INFO] Worker exiting (pid: 31183)
+[2018-10-22 13:39:32 +0000] [31185] [INFO] Worker exiting (pid: 31185)
+[2018-10-22 15:39:33 +0200] [31180] [INFO] Shutting down: Master
+[2018-10-22 15:39:33 +0200] [31268] [INFO] Starting gunicorn 19.9.0
+[2018-10-22 15:39:33 +0200] [31268] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (31268)
+[2018-10-22 15:39:33 +0200] [31268] [INFO] Using worker: sync
+[2018-10-22 15:39:33 +0200] [31271] [INFO] Booting worker with pid: 31271
+[2018-10-22 15:39:33 +0200] [31273] [INFO] Booting worker with pid: 31273
+[2018-10-22 15:39:33 +0200] [31275] [INFO] Booting worker with pid: 31275
+[2018-10-22 15:40:56 +0200] [31268] [INFO] Handling signal: term
+[2018-10-22 13:40:56 +0000] [31275] [INFO] Worker exiting (pid: 31275)
+[2018-10-22 13:40:56 +0000] [31271] [INFO] Worker exiting (pid: 31271)
+[2018-10-22 13:40:56 +0000] [31273] [INFO] Worker exiting (pid: 31273)
+[2018-10-22 15:40:57 +0200] [31268] [INFO] Shutting down: Master
+[2018-10-22 15:40:57 +0200] [31323] [INFO] Starting gunicorn 19.9.0
+[2018-10-22 15:40:57 +0200] [31323] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (31323)
+[2018-10-22 15:40:57 +0200] [31323] [INFO] Using worker: sync
+[2018-10-22 15:40:57 +0200] [31326] [INFO] Booting worker with pid: 31326
+[2018-10-22 15:40:57 +0200] [31328] [INFO] Booting worker with pid: 31328
+[2018-10-22 15:40:57 +0200] [31330] [INFO] Booting worker with pid: 31330
+[2018-10-22 15:41:39 +0200] [31323] [INFO] Handling signal: term
+[2018-10-22 13:41:39 +0000] [31330] [INFO] Worker exiting (pid: 31330)
+[2018-10-22 13:41:39 +0000] [31326] [INFO] Worker exiting (pid: 31326)
+[2018-10-22 13:41:39 +0000] [31328] [INFO] Worker exiting (pid: 31328)
+[2018-10-22 15:41:39 +0200] [31323] [INFO] Shutting down: Master
+[2018-10-22 15:41:39 +0200] [31344] [INFO] Starting gunicorn 19.9.0
+[2018-10-22 15:41:39 +0200] [31344] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (31344)
+[2018-10-22 15:41:39 +0200] [31344] [INFO] Using worker: sync
+[2018-10-22 15:41:39 +0200] [31347] [INFO] Booting worker with pid: 31347
+[2018-10-22 15:41:39 +0200] [31348] [INFO] Booting worker with pid: 31348
+[2018-10-22 15:41:39 +0200] [31351] [INFO] Booting worker with pid: 31351
+[2018-10-22 15:42:58 +0200] [31344] [INFO] Handling signal: term
+[2018-10-22 13:42:58 +0000] [31348] [INFO] Worker exiting (pid: 31348)
+[2018-10-22 13:42:58 +0000] [31351] [INFO] Worker exiting (pid: 31351)
+[2018-10-22 13:42:58 +0000] [31347] [INFO] Worker exiting (pid: 31347)
+[2018-10-22 15:42:58 +0200] [31344] [INFO] Shutting down: Master
+[2018-10-22 15:42:58 +0200] [31379] [INFO] Starting gunicorn 19.9.0
+[2018-10-22 15:42:58 +0200] [31379] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (31379)
+[2018-10-22 15:42:58 +0200] [31379] [INFO] Using worker: sync
+[2018-10-22 15:42:58 +0200] [31383] [INFO] Booting worker with pid: 31383
+[2018-10-22 15:42:58 +0200] [31385] [INFO] Booting worker with pid: 31385
+[2018-10-22 15:42:58 +0200] [31387] [INFO] Booting worker with pid: 31387
+[2018-10-22 15:44:17 +0200] [31379] [INFO] Handling signal: term
+[2018-10-22 13:44:17 +0000] [31383] [INFO] Worker exiting (pid: 31383)
+[2018-10-22 13:44:17 +0000] [31385] [INFO] Worker exiting (pid: 31385)
+[2018-10-22 13:44:17 +0000] [31387] [INFO] Worker exiting (pid: 31387)
+[2018-10-22 15:44:17 +0200] [31379] [INFO] Shutting down: Master
+[2018-10-22 15:44:17 +0200] [31403] [INFO] Starting gunicorn 19.9.0
+[2018-10-22 15:44:17 +0200] [31403] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (31403)
+[2018-10-22 15:44:17 +0200] [31403] [INFO] Using worker: sync
+[2018-10-22 15:44:17 +0200] [31407] [INFO] Booting worker with pid: 31407
+[2018-10-22 15:44:18 +0200] [31408] [INFO] Booting worker with pid: 31408
+[2018-10-22 15:44:18 +0200] [31411] [INFO] Booting worker with pid: 31411
+[2018-10-22 15:49:39 +0200] [31403] [INFO] Handling signal: term
+[2018-10-22 13:49:39 +0000] [31408] [INFO] Worker exiting (pid: 31408)
+[2018-10-22 13:49:39 +0000] [31411] [INFO] Worker exiting (pid: 31411)
+[2018-10-22 13:49:39 +0000] [31407] [INFO] Worker exiting (pid: 31407)
+[2018-10-22 15:49:39 +0200] [31403] [INFO] Shutting down: Master
+[2018-10-22 15:49:39 +0200] [31578] [INFO] Starting gunicorn 19.9.0
+[2018-10-22 15:49:39 +0200] [31578] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (31578)
+[2018-10-22 15:49:39 +0200] [31578] [INFO] Using worker: sync
+[2018-10-22 15:49:39 +0200] [31581] [INFO] Booting worker with pid: 31581
+[2018-10-22 15:49:39 +0200] [31582] [INFO] Booting worker with pid: 31582
+[2018-10-22 15:49:39 +0200] [31585] [INFO] Booting worker with pid: 31585
+[2018-10-22 15:58:56 +0200] [31578] [INFO] Handling signal: term
+[2018-10-22 13:58:56 +0000] [31582] [INFO] Worker exiting (pid: 31582)
+[2018-10-22 13:58:56 +0000] [31585] [INFO] Worker exiting (pid: 31585)
+[2018-10-22 13:58:56 +0000] [31581] [INFO] Worker exiting (pid: 31581)
+[2018-10-22 15:58:56 +0200] [31578] [INFO] Shutting down: Master
+[2018-10-22 15:58:56 +0200] [31858] [INFO] Starting gunicorn 19.9.0
+[2018-10-22 15:58:56 +0200] [31858] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (31858)
+[2018-10-22 15:58:56 +0200] [31858] [INFO] Using worker: sync
+[2018-10-22 15:58:56 +0200] [31862] [INFO] Booting worker with pid: 31862
+[2018-10-22 15:58:56 +0200] [31863] [INFO] Booting worker with pid: 31863
+[2018-10-22 15:58:56 +0200] [31865] [INFO] Booting worker with pid: 31865
+[2018-10-22 16:03:44 +0200] [31858] [INFO] Handling signal: term
+[2018-10-22 14:03:44 +0000] [31862] [INFO] Worker exiting (pid: 31862)
+[2018-10-22 14:03:44 +0000] [31865] [INFO] Worker exiting (pid: 31865)
+[2018-10-22 14:03:44 +0000] [31863] [INFO] Worker exiting (pid: 31863)
+[2018-10-22 16:03:44 +0200] [31858] [INFO] Shutting down: Master
+[2018-10-22 16:03:44 +0200] [31967] [INFO] Starting gunicorn 19.9.0
+[2018-10-22 16:03:44 +0200] [31967] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (31967)
+[2018-10-22 16:03:44 +0200] [31967] [INFO] Using worker: sync
+[2018-10-22 16:03:44 +0200] [31971] [INFO] Booting worker with pid: 31971
+[2018-10-22 16:03:44 +0200] [31972] [INFO] Booting worker with pid: 31972
+[2018-10-22 16:03:44 +0200] [31975] [INFO] Booting worker with pid: 31975
+[2018-10-22 16:04:43 +0200] [31967] [INFO] Handling signal: term
+[2018-10-22 14:04:43 +0000] [31975] [INFO] Worker exiting (pid: 31975)
+[2018-10-22 14:04:43 +0000] [31972] [INFO] Worker exiting (pid: 31972)
+[2018-10-22 14:04:43 +0000] [31971] [INFO] Worker exiting (pid: 31971)
+[2018-10-22 16:04:43 +0200] [31967] [INFO] Shutting down: Master
+[2018-10-22 16:04:43 +0200] [32002] [INFO] Starting gunicorn 19.9.0
+[2018-10-22 16:04:43 +0200] [32002] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (32002)
+[2018-10-22 16:04:43 +0200] [32002] [INFO] Using worker: sync
+[2018-10-22 16:04:43 +0200] [32005] [INFO] Booting worker with pid: 32005
+[2018-10-22 16:04:43 +0200] [32007] [INFO] Booting worker with pid: 32007
+[2018-10-22 16:04:43 +0200] [32009] [INFO] Booting worker with pid: 32009
+[2018-10-22 16:05:53 +0200] [32002] [INFO] Handling signal: term
+[2018-10-22 14:05:53 +0000] [32007] [INFO] Worker exiting (pid: 32007)
+[2018-10-22 14:05:53 +0000] [32005] [INFO] Worker exiting (pid: 32005)
+[2018-10-22 14:05:53 +0000] [32009] [INFO] Worker exiting (pid: 32009)
+[2018-10-22 16:05:53 +0200] [32002] [INFO] Shutting down: Master
+[2018-10-22 16:05:53 +0200] [32060] [INFO] Starting gunicorn 19.9.0
+[2018-10-22 16:05:53 +0200] [32060] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (32060)
+[2018-10-22 16:05:53 +0200] [32060] [INFO] Using worker: sync
+[2018-10-22 16:05:53 +0200] [32064] [INFO] Booting worker with pid: 32064
+[2018-10-22 16:05:53 +0200] [32065] [INFO] Booting worker with pid: 32065
+[2018-10-22 16:05:53 +0200] [32066] [INFO] Booting worker with pid: 32066
+[2018-10-22 16:07:07 +0200] [32060] [INFO] Handling signal: term
+[2018-10-22 14:07:07 +0000] [32064] [INFO] Worker exiting (pid: 32064)
+[2018-10-22 14:07:07 +0000] [32066] [INFO] Worker exiting (pid: 32066)
+[2018-10-22 14:07:07 +0000] [32065] [INFO] Worker exiting (pid: 32065)
+[2018-10-22 16:07:08 +0200] [32060] [INFO] Shutting down: Master
+[2018-10-22 16:07:08 +0200] [32092] [INFO] Starting gunicorn 19.9.0
+[2018-10-22 16:07:08 +0200] [32092] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (32092)
+[2018-10-22 16:07:08 +0200] [32092] [INFO] Using worker: sync
+[2018-10-22 16:07:08 +0200] [32096] [INFO] Booting worker with pid: 32096
+[2018-10-22 16:07:08 +0200] [32099] [INFO] Booting worker with pid: 32099
+[2018-10-22 16:07:08 +0200] [32101] [INFO] Booting worker with pid: 32101
+[2018-10-22 16:07:37 +0200] [32092] [INFO] Handling signal: term
+[2018-10-22 14:07:37 +0000] [32101] [INFO] Worker exiting (pid: 32101)
+[2018-10-22 14:07:37 +0000] [32099] [INFO] Worker exiting (pid: 32099)
+[2018-10-22 14:07:37 +0000] [32096] [INFO] Worker exiting (pid: 32096)
+[2018-10-22 16:07:37 +0200] [32092] [INFO] Shutting down: Master
+[2018-10-22 16:08:04 +0200] [32160] [INFO] Starting gunicorn 19.9.0
+[2018-10-22 16:08:04 +0200] [32160] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (32160)
+[2018-10-22 16:08:04 +0200] [32160] [INFO] Using worker: sync
+[2018-10-22 16:08:04 +0200] [32163] [INFO] Booting worker with pid: 32163
+[2018-10-22 16:08:04 +0200] [32165] [INFO] Booting worker with pid: 32165
+[2018-10-22 16:08:04 +0200] [32167] [INFO] Booting worker with pid: 32167
+[2018-10-22 16:08:30 +0200] [32160] [INFO] Handling signal: term
+[2018-10-22 14:08:30 +0000] [32165] [INFO] Worker exiting (pid: 32165)
+[2018-10-22 14:08:30 +0000] [32167] [INFO] Worker exiting (pid: 32167)
+[2018-10-22 14:08:30 +0000] [32163] [INFO] Worker exiting (pid: 32163)
+[2018-10-22 16:08:30 +0200] [32160] [INFO] Shutting down: Master
+[2018-10-22 16:08:35 +0200] [32223] [INFO] Starting gunicorn 19.9.0
+[2018-10-22 16:08:35 +0200] [32223] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (32223)
+[2018-10-22 16:08:35 +0200] [32223] [INFO] Using worker: sync
+[2018-10-22 16:08:35 +0200] [32226] [INFO] Booting worker with pid: 32226
+[2018-10-22 16:08:35 +0200] [32228] [INFO] Booting worker with pid: 32228
+[2018-10-22 16:08:35 +0200] [32230] [INFO] Booting worker with pid: 32230
+[2018-10-22 16:18:52 +0200] [32223] [INFO] Handling signal: term
+[2018-10-22 14:18:52 +0000] [32228] [INFO] Worker exiting (pid: 32228)
+[2018-10-22 14:18:52 +0000] [32230] [INFO] Worker exiting (pid: 32230)
+[2018-10-22 14:18:52 +0000] [32226] [INFO] Worker exiting (pid: 32226)
+[2018-10-22 16:18:52 +0200] [32223] [INFO] Shutting down: Master
+[2018-10-22 16:18:52 +0200] [32748] [INFO] Starting gunicorn 19.9.0
+[2018-10-22 16:18:52 +0200] [32748] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (32748)
+[2018-10-22 16:18:52 +0200] [32748] [INFO] Using worker: sync
+[2018-10-22 16:18:52 +0200] [32751] [INFO] Booting worker with pid: 32751
+[2018-10-22 16:18:52 +0200] [32752] [INFO] Booting worker with pid: 32752
+[2018-10-22 16:18:53 +0200] [32755] [INFO] Booting worker with pid: 32755
+[2018-10-22 14:19:30 +0000] [32751] [INFO] Worker exiting (pid: 32751)
+[2018-10-22 14:19:30 +0000] [32752] [INFO] Worker exiting (pid: 32752)
+[2018-10-22 14:19:30 +0000] [32755] [INFO] Worker exiting (pid: 32755)
+[2018-10-22 16:19:30 +0200] [32748] [INFO] Handling signal: term
+[2018-10-22 16:19:30 +0200] [32748] [INFO] Shutting down: Master
+[2018-10-22 16:19:31 +0200] [317] [INFO] Starting gunicorn 19.9.0
+[2018-10-22 16:19:31 +0200] [317] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (317)
+[2018-10-22 16:19:31 +0200] [317] [INFO] Using worker: sync
+[2018-10-22 16:19:31 +0200] [320] [INFO] Booting worker with pid: 320
+[2018-10-22 16:19:31 +0200] [322] [INFO] Booting worker with pid: 322
+[2018-10-22 16:19:31 +0200] [323] [INFO] Booting worker with pid: 323
+[2018-10-22 16:22:17 +0200] [317] [INFO] Handling signal: term
+[2018-10-22 14:22:17 +0000] [320] [INFO] Worker exiting (pid: 320)
+[2018-10-22 14:22:17 +0000] [323] [INFO] Worker exiting (pid: 323)
+[2018-10-22 14:22:17 +0000] [322] [INFO] Worker exiting (pid: 322)
+[2018-10-22 16:22:17 +0200] [317] [INFO] Shutting down: Master
+[2018-10-22 16:22:17 +0200] [384] [INFO] Starting gunicorn 19.9.0
+[2018-10-22 16:22:17 +0200] [384] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (384)
+[2018-10-22 16:22:17 +0200] [384] [INFO] Using worker: sync
+[2018-10-22 16:22:17 +0200] [387] [INFO] Booting worker with pid: 387
+[2018-10-22 16:22:17 +0200] [388] [INFO] Booting worker with pid: 388
+[2018-10-22 16:22:17 +0200] [393] [INFO] Booting worker with pid: 393
+[2018-10-22 16:25:55 +0200] [384] [INFO] Handling signal: term
+[2018-10-22 14:25:55 +0000] [388] [INFO] Worker exiting (pid: 388)
+[2018-10-22 14:25:55 +0000] [387] [INFO] Worker exiting (pid: 387)
+[2018-10-22 14:25:55 +0000] [393] [INFO] Worker exiting (pid: 393)
+[2018-10-22 16:25:55 +0200] [384] [INFO] Shutting down: Master
+[2018-10-22 16:25:55 +0200] [486] [INFO] Starting gunicorn 19.9.0
+[2018-10-22 16:25:55 +0200] [486] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (486)
+[2018-10-22 16:25:55 +0200] [486] [INFO] Using worker: sync
+[2018-10-22 16:25:55 +0200] [490] [INFO] Booting worker with pid: 490
+[2018-10-22 16:25:55 +0200] [492] [INFO] Booting worker with pid: 492
+[2018-10-22 16:25:55 +0200] [494] [INFO] Booting worker with pid: 494
+[2018-10-22 16:27:20 +0200] [486] [INFO] Handling signal: term
+[2018-10-22 14:27:20 +0000] [494] [INFO] Worker exiting (pid: 494)
+[2018-10-22 14:27:20 +0000] [490] [INFO] Worker exiting (pid: 490)
+[2018-10-22 14:27:20 +0000] [492] [INFO] Worker exiting (pid: 492)
+[2018-10-22 16:27:20 +0200] [486] [INFO] Shutting down: Master
+[2018-10-22 16:27:20 +0200] [510] [INFO] Starting gunicorn 19.9.0
+[2018-10-22 16:27:20 +0200] [510] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (510)
+[2018-10-22 16:27:20 +0200] [510] [INFO] Using worker: sync
+[2018-10-22 16:27:20 +0200] [513] [INFO] Booting worker with pid: 513
+[2018-10-22 16:27:20 +0200] [515] [INFO] Booting worker with pid: 515
+[2018-10-22 16:27:20 +0200] [517] [INFO] Booting worker with pid: 517
+[2018-10-22 16:28:39 +0200] [510] [INFO] Handling signal: term
+[2018-10-22 14:28:39 +0000] [513] [INFO] Worker exiting (pid: 513)
+[2018-10-22 14:28:39 +0000] [517] [INFO] Worker exiting (pid: 517)
+[2018-10-22 14:28:39 +0000] [515] [INFO] Worker exiting (pid: 515)
+[2018-10-22 16:28:39 +0200] [510] [INFO] Shutting down: Master
+[2018-10-22 16:28:39 +0200] [537] [INFO] Starting gunicorn 19.9.0
+[2018-10-22 16:28:39 +0200] [537] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (537)
+[2018-10-22 16:28:39 +0200] [537] [INFO] Using worker: sync
+[2018-10-22 16:28:39 +0200] [540] [INFO] Booting worker with pid: 540
+[2018-10-22 16:28:39 +0200] [541] [INFO] Booting worker with pid: 541
+[2018-10-22 16:28:39 +0200] [544] [INFO] Booting worker with pid: 544
+[2018-10-22 16:30:10 +0200] [537] [INFO] Handling signal: term
+[2018-10-22 14:30:10 +0000] [544] [INFO] Worker exiting (pid: 544)
+[2018-10-22 14:30:10 +0000] [541] [INFO] Worker exiting (pid: 541)
+[2018-10-22 14:30:10 +0000] [540] [INFO] Worker exiting (pid: 540)
+[2018-10-22 16:30:10 +0200] [537] [INFO] Shutting down: Master
+[2018-10-22 16:30:10 +0200] [586] [INFO] Starting gunicorn 19.9.0
+[2018-10-22 16:30:10 +0200] [586] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (586)
+[2018-10-22 16:30:10 +0200] [586] [INFO] Using worker: sync
+[2018-10-22 16:30:10 +0200] [590] [INFO] Booting worker with pid: 590
+[2018-10-22 16:30:10 +0200] [592] [INFO] Booting worker with pid: 592
+[2018-10-22 16:30:10 +0200] [594] [INFO] Booting worker with pid: 594
+[2018-10-22 16:32:28 +0200] [586] [INFO] Handling signal: term
+[2018-10-22 14:32:28 +0000] [594] [INFO] Worker exiting (pid: 594)
+[2018-10-22 14:32:28 +0000] [592] [INFO] Worker exiting (pid: 592)
+[2018-10-22 14:32:28 +0000] [590] [INFO] Worker exiting (pid: 590)
+[2018-10-22 16:32:29 +0200] [586] [INFO] Shutting down: Master
+[2018-10-22 16:32:29 +0200] [617] [INFO] Starting gunicorn 19.9.0
+[2018-10-22 16:32:29 +0200] [617] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (617)
+[2018-10-22 16:32:29 +0200] [617] [INFO] Using worker: sync
+[2018-10-22 16:32:29 +0200] [623] [INFO] Booting worker with pid: 623
+[2018-10-22 16:32:29 +0200] [625] [INFO] Booting worker with pid: 625
+[2018-10-22 16:32:29 +0200] [627] [INFO] Booting worker with pid: 627
+[2018-10-22 16:35:00 +0200] [617] [INFO] Handling signal: term
+[2018-10-22 14:35:00 +0000] [623] [INFO] Worker exiting (pid: 623)
+[2018-10-22 14:35:00 +0000] [627] [INFO] Worker exiting (pid: 627)
+[2018-10-22 14:35:00 +0000] [625] [INFO] Worker exiting (pid: 625)
+[2018-10-22 16:35:00 +0200] [617] [INFO] Shutting down: Master
+[2018-10-22 16:35:00 +0200] [678] [INFO] Starting gunicorn 19.9.0
+[2018-10-22 16:35:00 +0200] [678] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (678)
+[2018-10-22 16:35:00 +0200] [678] [INFO] Using worker: sync
+[2018-10-22 16:35:00 +0200] [681] [INFO] Booting worker with pid: 681
+[2018-10-22 16:35:01 +0200] [683] [INFO] Booting worker with pid: 683
+[2018-10-22 16:35:01 +0200] [685] [INFO] Booting worker with pid: 685
+[2018-10-22 14:35:39 +0000] [681] [INFO] Worker exiting (pid: 681)
+[2018-10-22 14:35:39 +0000] [683] [INFO] Worker exiting (pid: 683)
+[2018-10-22 14:35:39 +0000] [685] [INFO] Worker exiting (pid: 685)
+[2018-10-22 16:35:39 +0200] [678] [INFO] Handling signal: term
+[2018-10-22 16:35:39 +0200] [678] [INFO] Shutting down: Master
+[2018-10-22 16:35:39 +0200] [720] [INFO] Starting gunicorn 19.9.0
+[2018-10-22 16:35:39 +0200] [720] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (720)
+[2018-10-22 16:35:39 +0200] [720] [INFO] Using worker: sync
+[2018-10-22 16:35:39 +0200] [724] [INFO] Booting worker with pid: 724
+[2018-10-22 16:35:39 +0200] [725] [INFO] Booting worker with pid: 725
+[2018-10-22 16:35:39 +0200] [727] [INFO] Booting worker with pid: 727
+[2018-10-22 14:36:13 +0000] [727] [INFO] Worker exiting (pid: 727)
+[2018-10-22 16:36:13 +0200] [720] [INFO] Handling signal: term
+[2018-10-22 14:36:13 +0000] [725] [INFO] Worker exiting (pid: 725)
+[2018-10-22 14:36:13 +0000] [724] [INFO] Worker exiting (pid: 724)
+[2018-10-22 16:36:13 +0200] [720] [INFO] Shutting down: Master
+[2018-10-22 16:36:13 +0200] [755] [INFO] Starting gunicorn 19.9.0
+[2018-10-22 16:36:13 +0200] [755] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (755)
+[2018-10-22 16:36:13 +0200] [755] [INFO] Using worker: sync
+[2018-10-22 16:36:13 +0200] [758] [INFO] Booting worker with pid: 758
+[2018-10-22 16:36:13 +0200] [760] [INFO] Booting worker with pid: 760
+[2018-10-22 16:36:14 +0200] [764] [INFO] Booting worker with pid: 764
+[2018-10-22 16:38:15 +0200] [755] [INFO] Handling signal: term
+[2018-10-22 14:38:15 +0000] [760] [INFO] Worker exiting (pid: 760)
+[2018-10-22 14:38:15 +0000] [758] [INFO] Worker exiting (pid: 758)
+[2018-10-22 14:38:15 +0000] [764] [INFO] Worker exiting (pid: 764)
+[2018-10-22 16:38:15 +0200] [755] [INFO] Shutting down: Master
+[2018-10-22 16:38:16 +0200] [815] [INFO] Starting gunicorn 19.9.0
+[2018-10-22 16:38:16 +0200] [815] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (815)
+[2018-10-22 16:38:16 +0200] [815] [INFO] Using worker: sync
+[2018-10-22 16:38:16 +0200] [819] [INFO] Booting worker with pid: 819
+[2018-10-22 16:38:16 +0200] [821] [INFO] Booting worker with pid: 821
+[2018-10-22 16:38:16 +0200] [823] [INFO] Booting worker with pid: 823
+[2018-10-23 12:48:47 +0200] [815] [INFO] Handling signal: term
+[2018-10-23 10:48:47 +0000] [821] [INFO] Worker exiting (pid: 821)
+[2018-10-23 10:48:47 +0000] [819] [INFO] Worker exiting (pid: 819)
+[2018-10-23 10:48:47 +0000] [823] [INFO] Worker exiting (pid: 823)
+[2018-10-23 12:48:47 +0200] [815] [INFO] Shutting down: Master
+[2018-10-23 12:48:55 +0200] [22477] [INFO] Starting gunicorn 19.9.0
+[2018-10-23 12:48:55 +0200] [22477] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (22477)
+[2018-10-23 12:48:55 +0200] [22477] [INFO] Using worker: sync
+[2018-10-23 12:48:55 +0200] [22480] [INFO] Booting worker with pid: 22480
+[2018-10-23 12:48:55 +0200] [22482] [INFO] Booting worker with pid: 22482
+[2018-10-23 12:48:55 +0200] [22484] [INFO] Booting worker with pid: 22484
+[2018-10-23 12:50:55 +0200] [22477] [INFO] Handling signal: term
+[2018-10-23 10:50:55 +0000] [22484] [INFO] Worker exiting (pid: 22484)
+[2018-10-23 10:50:55 +0000] [22482] [INFO] Worker exiting (pid: 22482)
+[2018-10-23 10:50:55 +0000] [22480] [INFO] Worker exiting (pid: 22480)
+[2018-10-23 12:50:55 +0200] [22477] [INFO] Shutting down: Master
+[2018-10-23 12:50:56 +0200] [22586] [INFO] Starting gunicorn 19.9.0
+[2018-10-23 12:50:56 +0200] [22586] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (22586)
+[2018-10-23 12:50:56 +0200] [22586] [INFO] Using worker: sync
+[2018-10-23 12:50:56 +0200] [22590] [INFO] Booting worker with pid: 22590
+[2018-10-23 12:50:56 +0200] [22592] [INFO] Booting worker with pid: 22592
+[2018-10-23 12:50:56 +0200] [22594] [INFO] Booting worker with pid: 22594
+[2019-02-11 11:29:00 +0100] [1331] [INFO] Starting gunicorn 19.9.0
+[2019-02-11 11:29:00 +0100] [1331] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (1331)
+[2019-02-11 11:29:00 +0100] [1331] [INFO] Using worker: sync
+[2019-02-11 11:29:00 +0100] [1433] [INFO] Booting worker with pid: 1433
+[2019-02-11 11:29:00 +0100] [1434] [INFO] Booting worker with pid: 1434
+[2019-02-11 11:29:00 +0100] [1435] [INFO] Booting worker with pid: 1435
+[2019-04-12 14:24:47 +0200] [1362] [INFO] Starting gunicorn 19.9.0
+[2019-04-12 14:24:47 +0200] [1362] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (1362)
+[2019-04-12 14:24:47 +0200] [1362] [INFO] Using worker: sync
+[2019-04-12 14:24:47 +0200] [1429] [INFO] Booting worker with pid: 1429
+[2019-04-12 14:24:47 +0200] [1430] [INFO] Booting worker with pid: 1430
+[2019-04-12 14:24:47 +0200] [1431] [INFO] Booting worker with pid: 1431
+[2019-05-31 14:45:04 +0200] [1362] [INFO] Handling signal: term
+[2019-05-31 12:45:04 +0000] [1430] [INFO] Worker exiting (pid: 1430)
+[2019-05-31 12:45:04 +0000] [1429] [INFO] Worker exiting (pid: 1429)
+[2019-05-31 12:45:04 +0000] [1431] [INFO] Worker exiting (pid: 1431)
+[2019-05-31 14:45:04 +0200] [1362] [INFO] Shutting down: Master
+[2019-05-31 14:45:04 +0200] [25207] [INFO] Starting gunicorn 19.9.0
+[2019-05-31 14:45:04 +0200] [25207] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (25207)
+[2019-05-31 14:45:04 +0200] [25207] [INFO] Using worker: sync
+[2019-05-31 14:45:04 +0200] [25211] [INFO] Booting worker with pid: 25211
+[2019-05-31 14:45:04 +0200] [25212] [INFO] Booting worker with pid: 25212
+[2019-05-31 14:45:04 +0200] [25213] [INFO] Booting worker with pid: 25213
+[2019-05-31 14:47:48 +0200] [25207] [INFO] Handling signal: term
+[2019-05-31 12:47:48 +0000] [25211] [INFO] Worker exiting (pid: 25211)
+[2019-05-31 12:47:48 +0000] [25213] [INFO] Worker exiting (pid: 25213)
+[2019-05-31 12:47:48 +0000] [25212] [INFO] Worker exiting (pid: 25212)
+[2019-05-31 14:47:48 +0200] [25207] [INFO] Shutting down: Master
+[2019-05-31 14:47:48 +0200] [25286] [INFO] Starting gunicorn 19.9.0
+[2019-05-31 14:47:48 +0200] [25286] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (25286)
+[2019-05-31 14:47:48 +0200] [25286] [INFO] Using worker: sync
+[2019-05-31 14:47:48 +0200] [25289] [INFO] Booting worker with pid: 25289
+[2019-05-31 14:47:48 +0200] [25291] [INFO] Booting worker with pid: 25291
+[2019-05-31 14:47:48 +0200] [25293] [INFO] Booting worker with pid: 25293
+[2019-05-31 12:48:24 +0000] [25289] [INFO] Worker exiting (pid: 25289)
+[2019-05-31 12:48:24 +0000] [25293] [INFO] Worker exiting (pid: 25293)
+[2019-05-31 14:48:24 +0200] [25286] [INFO] Handling signal: term
+[2019-05-31 12:48:24 +0000] [25291] [INFO] Worker exiting (pid: 25291)
+[2019-05-31 14:48:24 +0200] [25286] [INFO] Shutting down: Master
+[2019-05-31 14:48:24 +0200] [25328] [INFO] Starting gunicorn 19.9.0
+[2019-05-31 14:48:24 +0200] [25328] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (25328)
+[2019-05-31 14:48:24 +0200] [25328] [INFO] Using worker: sync
+[2019-05-31 14:48:24 +0200] [25331] [INFO] Booting worker with pid: 25331
+[2019-05-31 14:48:25 +0200] [25333] [INFO] Booting worker with pid: 25333
+[2019-05-31 14:48:25 +0200] [25335] [INFO] Booting worker with pid: 25335
+[2019-05-31 14:49:34 +0200] [25328] [INFO] Handling signal: term
+[2019-05-31 12:49:34 +0000] [25331] [INFO] Worker exiting (pid: 25331)
+[2019-05-31 12:49:34 +0000] [25335] [INFO] Worker exiting (pid: 25335)
+[2019-05-31 12:49:34 +0000] [25333] [INFO] Worker exiting (pid: 25333)
+[2019-05-31 14:49:34 +0200] [25328] [INFO] Shutting down: Master
+[2019-05-31 14:49:34 +0200] [25413] [INFO] Starting gunicorn 19.9.0
+[2019-05-31 14:49:34 +0200] [25413] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (25413)
+[2019-05-31 14:49:34 +0200] [25413] [INFO] Using worker: sync
+[2019-05-31 14:49:34 +0200] [25416] [INFO] Booting worker with pid: 25416
+[2019-05-31 14:49:34 +0200] [25418] [INFO] Booting worker with pid: 25418
+[2019-05-31 14:49:34 +0200] [25419] [INFO] Booting worker with pid: 25419
+[2019-05-31 14:50:18 +0200] [25413] [INFO] Handling signal: term
+[2019-05-31 12:50:18 +0000] [25416] [INFO] Worker exiting (pid: 25416)
+[2019-05-31 12:50:18 +0000] [25418] [INFO] Worker exiting (pid: 25418)
+[2019-05-31 12:50:18 +0000] [25419] [INFO] Worker exiting (pid: 25419)
+[2019-05-31 14:50:19 +0200] [25413] [INFO] Shutting down: Master
+[2019-05-31 14:50:19 +0200] [25454] [INFO] Starting gunicorn 19.9.0
+[2019-05-31 14:50:19 +0200] [25454] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (25454)
+[2019-05-31 14:50:19 +0200] [25454] [INFO] Using worker: sync
+[2019-05-31 14:50:19 +0200] [25458] [INFO] Booting worker with pid: 25458
+[2019-05-31 14:50:19 +0200] [25460] [INFO] Booting worker with pid: 25460
+[2019-05-31 14:50:19 +0200] [25461] [INFO] Booting worker with pid: 25461
+[2019-06-06 11:38:37 +0200] [25454] [INFO] Handling signal: term
+[2019-06-06 09:38:37 +0000] [25460] [INFO] Worker exiting (pid: 25460)
+[2019-06-06 09:38:37 +0000] [25461] [INFO] Worker exiting (pid: 25461)
+[2019-06-06 09:38:37 +0000] [25458] [INFO] Worker exiting (pid: 25458)
+[2019-06-06 11:38:37 +0200] [25454] [INFO] Shutting down: Master
+[2019-06-06 11:38:38 +0200] [7315] [INFO] Starting gunicorn 19.9.0
+[2019-06-06 11:38:38 +0200] [7315] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (7315)
+[2019-06-06 11:38:38 +0200] [7315] [INFO] Using worker: sync
+[2019-06-06 11:38:38 +0200] [7319] [INFO] Booting worker with pid: 7319
+[2019-06-06 11:38:38 +0200] [7321] [INFO] Booting worker with pid: 7321
+[2019-06-06 11:38:38 +0200] [7323] [INFO] Booting worker with pid: 7323
+[2019-06-06 11:42:43 +0200] [7315] [INFO] Handling signal: term
+[2019-06-06 09:42:43 +0000] [7321] [INFO] Worker exiting (pid: 7321)
+[2019-06-06 09:42:43 +0000] [7319] [INFO] Worker exiting (pid: 7319)
+[2019-06-06 09:42:43 +0000] [7323] [INFO] Worker exiting (pid: 7323)
+[2019-06-06 11:42:44 +0200] [7315] [INFO] Shutting down: Master
+[2019-06-06 11:42:44 +0200] [7511] [INFO] Starting gunicorn 19.9.0
+[2019-06-06 11:42:44 +0200] [7511] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (7511)
+[2019-06-06 11:42:44 +0200] [7511] [INFO] Using worker: sync
+[2019-06-06 11:42:44 +0200] [7515] [INFO] Booting worker with pid: 7515
+[2019-06-06 11:42:44 +0200] [7516] [INFO] Booting worker with pid: 7516
+[2019-06-06 11:42:44 +0200] [7519] [INFO] Booting worker with pid: 7519
+[2019-06-06 11:54:29 +0200] [7511] [INFO] Handling signal: term
+[2019-06-06 09:54:29 +0000] [7516] [INFO] Worker exiting (pid: 7516)
+[2019-06-06 09:54:29 +0000] [7515] [INFO] Worker exiting (pid: 7515)
+[2019-06-06 09:54:29 +0000] [7519] [INFO] Worker exiting (pid: 7519)
+[2019-06-06 11:54:29 +0200] [7511] [INFO] Shutting down: Master
+[2019-06-06 11:54:29 +0200] [7878] [INFO] Starting gunicorn 19.9.0
+[2019-06-06 11:54:29 +0200] [7878] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (7878)
+[2019-06-06 11:54:29 +0200] [7878] [INFO] Using worker: sync
+[2019-06-06 11:54:29 +0200] [7882] [INFO] Booting worker with pid: 7882
+[2019-06-06 11:54:29 +0200] [7883] [INFO] Booting worker with pid: 7883
+[2019-06-06 11:54:29 +0200] [7886] [INFO] Booting worker with pid: 7886
+[2019-06-18 16:19:35 +0200] [7878] [INFO] Handling signal: term
+[2019-06-18 14:19:35 +0000] [7882] [INFO] Worker exiting (pid: 7882)
+[2019-06-18 14:19:35 +0000] [7886] [INFO] Worker exiting (pid: 7886)
+[2019-06-18 14:19:35 +0000] [7883] [INFO] Worker exiting (pid: 7883)
+[2019-06-18 16:19:35 +0200] [7878] [INFO] Shutting down: Master
+[2019-06-18 16:20:28 +0200] [1326] [INFO] Starting gunicorn 19.9.0
+[2019-06-18 16:20:28 +0200] [1326] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (1326)
+[2019-06-18 16:20:28 +0200] [1326] [INFO] Using worker: sync
+[2019-06-18 16:20:28 +0200] [1405] [INFO] Booting worker with pid: 1405
+[2019-06-18 16:20:28 +0200] [1419] [INFO] Booting worker with pid: 1419
+[2019-06-18 16:20:28 +0200] [1435] [INFO] Booting worker with pid: 1435
+[2019-06-20 11:51:03 +0200] [1326] [INFO] Handling signal: term
+[2019-06-20 09:51:03 +0000] [1405] [INFO] Worker exiting (pid: 1405)
+[2019-06-20 09:51:03 +0000] [1419] [INFO] Worker exiting (pid: 1419)
+[2019-06-20 09:51:03 +0000] [1435] [INFO] Worker exiting (pid: 1435)
+[2019-06-20 11:51:03 +0200] [1326] [INFO] Shutting down: Master
+[2019-06-20 11:51:04 +0200] [9468] [INFO] Starting gunicorn 19.9.0
+[2019-06-20 11:51:04 +0200] [9468] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (9468)
+[2019-06-20 11:51:04 +0200] [9468] [INFO] Using worker: sync
+[2019-06-20 11:51:04 +0200] [9473] [INFO] Booting worker with pid: 9473
+[2019-06-20 11:51:04 +0200] [9474] [INFO] Booting worker with pid: 9474
+[2019-06-20 11:51:04 +0200] [9477] [INFO] Booting worker with pid: 9477
+[2019-06-20 09:51:42 +0000] [9473] [INFO] Worker exiting (pid: 9473)
+[2019-06-20 09:51:42 +0000] [9474] [INFO] Worker exiting (pid: 9474)
+[2019-06-20 09:51:42 +0000] [9477] [INFO] Worker exiting (pid: 9477)
+[2019-06-20 11:51:42 +0200] [9468] [INFO] Handling signal: term
+[2019-06-20 11:51:42 +0200] [9468] [INFO] Shutting down: Master
+[2019-06-20 11:51:42 +0200] [9528] [INFO] Starting gunicorn 19.9.0
+[2019-06-20 11:51:42 +0200] [9528] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (9528)
+[2019-06-20 11:51:42 +0200] [9528] [INFO] Using worker: sync
+[2019-06-20 11:51:42 +0200] [9532] [INFO] Booting worker with pid: 9532
+[2019-06-20 11:51:42 +0200] [9534] [INFO] Booting worker with pid: 9534
+[2019-06-20 11:51:42 +0200] [9536] [INFO] Booting worker with pid: 9536
+[2019-06-20 11:59:40 +0200] [9528] [INFO] Handling signal: term
+[2019-06-20 09:59:40 +0000] [9532] [INFO] Worker exiting (pid: 9532)
+[2019-06-20 09:59:40 +0000] [9534] [INFO] Worker exiting (pid: 9534)
+[2019-06-20 09:59:40 +0000] [9536] [INFO] Worker exiting (pid: 9536)
+[2019-06-20 11:59:40 +0200] [9528] [INFO] Shutting down: Master
+[2019-06-20 11:59:40 +0200] [9621] [INFO] Starting gunicorn 19.9.0
+[2019-06-20 11:59:40 +0200] [9621] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (9621)
+[2019-06-20 11:59:40 +0200] [9621] [INFO] Using worker: sync
+[2019-06-20 11:59:40 +0200] [9625] [INFO] Booting worker with pid: 9625
+[2019-06-20 11:59:40 +0200] [9627] [INFO] Booting worker with pid: 9627
+[2019-06-20 11:59:40 +0200] [9629] [INFO] Booting worker with pid: 9629
+[2019-06-20 12:00:24 +0200] [9621] [INFO] Handling signal: term
+[2019-06-20 10:00:24 +0000] [9627] [INFO] Worker exiting (pid: 9627)
+[2019-06-20 10:00:24 +0000] [9629] [INFO] Worker exiting (pid: 9629)
+[2019-06-20 10:00:24 +0000] [9625] [INFO] Worker exiting (pid: 9625)
+[2019-06-20 12:00:24 +0200] [9621] [INFO] Shutting down: Master
+[2019-06-20 12:00:24 +0200] [9666] [INFO] Starting gunicorn 19.9.0
+[2019-06-20 12:00:24 +0200] [9666] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (9666)
+[2019-06-20 12:00:24 +0200] [9666] [INFO] Using worker: sync
+[2019-06-20 12:00:24 +0200] [9670] [INFO] Booting worker with pid: 9670
+[2019-06-20 12:00:24 +0200] [9672] [INFO] Booting worker with pid: 9672
+[2019-06-20 12:00:24 +0200] [9674] [INFO] Booting worker with pid: 9674
+[2019-06-20 10:00:48 +0000] [9672] [INFO] Worker exiting (pid: 9672)
+[2019-06-20 10:00:48 +0000] [9670] [INFO] Worker exiting (pid: 9670)
+[2019-06-20 10:00:48 +0000] [9674] [INFO] Worker exiting (pid: 9674)
+[2019-06-20 12:00:48 +0200] [9666] [INFO] Handling signal: term
+[2019-06-20 12:00:48 +0200] [9666] [INFO] Shutting down: Master
+[2019-06-20 12:00:49 +0200] [9704] [INFO] Starting gunicorn 19.9.0
+[2019-06-20 12:00:49 +0200] [9704] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (9704)
+[2019-06-20 12:00:49 +0200] [9704] [INFO] Using worker: sync
+[2019-06-20 12:00:49 +0200] [9707] [INFO] Booting worker with pid: 9707
+[2019-06-20 12:00:49 +0200] [9708] [INFO] Booting worker with pid: 9708
+[2019-06-20 12:00:49 +0200] [9711] [INFO] Booting worker with pid: 9711
+[2019-06-20 12:01:38 +0200] [9704] [INFO] Handling signal: term
+[2019-06-20 10:01:38 +0000] [9707] [INFO] Worker exiting (pid: 9707)
+[2019-06-20 10:01:38 +0000] [9708] [INFO] Worker exiting (pid: 9708)
+[2019-06-20 10:01:38 +0000] [9711] [INFO] Worker exiting (pid: 9711)
+[2019-06-20 12:01:38 +0200] [9704] [INFO] Shutting down: Master
+[2019-06-20 12:01:38 +0200] [9739] [INFO] Starting gunicorn 19.9.0
+[2019-06-20 12:01:38 +0200] [9739] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (9739)
+[2019-06-20 12:01:38 +0200] [9739] [INFO] Using worker: sync
+[2019-06-20 12:01:38 +0200] [9743] [INFO] Booting worker with pid: 9743
+[2019-06-20 12:01:39 +0200] [9745] [INFO] Booting worker with pid: 9745
+[2019-06-20 12:01:39 +0200] [9747] [INFO] Booting worker with pid: 9747
+[2019-06-20 12:02:27 +0200] [9739] [INFO] Handling signal: term
+[2019-06-20 10:02:27 +0000] [9743] [INFO] Worker exiting (pid: 9743)
+[2019-06-20 10:02:27 +0000] [9745] [INFO] Worker exiting (pid: 9745)
+[2019-06-20 10:02:27 +0000] [9747] [INFO] Worker exiting (pid: 9747)
+[2019-06-20 12:02:27 +0200] [9739] [INFO] Shutting down: Master
+[2019-06-20 12:02:27 +0200] [9777] [INFO] Starting gunicorn 19.9.0
+[2019-06-20 12:02:27 +0200] [9777] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (9777)
+[2019-06-20 12:02:27 +0200] [9777] [INFO] Using worker: sync
+[2019-06-20 12:02:27 +0200] [9780] [INFO] Booting worker with pid: 9780
+[2019-06-20 12:02:27 +0200] [9782] [INFO] Booting worker with pid: 9782
+[2019-06-20 12:02:27 +0200] [9784] [INFO] Booting worker with pid: 9784
+[2019-06-20 12:04:11 +0200] [9777] [INFO] Handling signal: term
+[2019-06-20 10:04:11 +0000] [9784] [INFO] Worker exiting (pid: 9784)
+[2019-06-20 10:04:11 +0000] [9780] [INFO] Worker exiting (pid: 9780)
+[2019-06-20 10:04:11 +0000] [9782] [INFO] Worker exiting (pid: 9782)
+[2019-06-20 12:04:11 +0200] [9777] [INFO] Shutting down: Master
+[2019-06-20 12:04:11 +0200] [9837] [INFO] Starting gunicorn 19.9.0
+[2019-06-20 12:04:11 +0200] [9837] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (9837)
+[2019-06-20 12:04:11 +0200] [9837] [INFO] Using worker: sync
+[2019-06-20 12:04:11 +0200] [9841] [INFO] Booting worker with pid: 9841
+[2019-06-20 12:04:11 +0200] [9843] [INFO] Booting worker with pid: 9843
+[2019-06-20 12:04:11 +0200] [9845] [INFO] Booting worker with pid: 9845
+[2019-06-20 12:06:04 +0200] [9837] [INFO] Handling signal: term
+[2019-06-20 10:06:04 +0000] [9843] [INFO] Worker exiting (pid: 9843)
+[2019-06-20 10:06:04 +0000] [9841] [INFO] Worker exiting (pid: 9841)
+[2019-06-20 10:06:04 +0000] [9845] [INFO] Worker exiting (pid: 9845)
+[2019-06-20 12:06:05 +0200] [9837] [INFO] Shutting down: Master
+[2019-06-20 12:06:05 +0200] [9893] [INFO] Starting gunicorn 19.9.0
+[2019-06-20 12:06:05 +0200] [9893] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (9893)
+[2019-06-20 12:06:05 +0200] [9893] [INFO] Using worker: sync
+[2019-06-20 12:06:05 +0200] [9898] [INFO] Booting worker with pid: 9898
+[2019-06-20 12:06:05 +0200] [9899] [INFO] Booting worker with pid: 9899
+[2019-06-20 12:06:05 +0200] [9900] [INFO] Booting worker with pid: 9900
+[2019-06-20 10:06:34 +0000] [9898] [INFO] Worker exiting (pid: 9898)
+[2019-06-20 12:06:34 +0200] [9893] [INFO] Handling signal: term
+[2019-06-20 10:06:34 +0000] [9900] [INFO] Worker exiting (pid: 9900)
+[2019-06-20 10:06:34 +0000] [9899] [INFO] Worker exiting (pid: 9899)
+[2019-06-20 12:06:34 +0200] [9893] [INFO] Shutting down: Master
+[2019-06-20 12:06:34 +0200] [9928] [INFO] Starting gunicorn 19.9.0
+[2019-06-20 12:06:34 +0200] [9928] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (9928)
+[2019-06-20 12:06:34 +0200] [9928] [INFO] Using worker: sync
+[2019-06-20 12:06:34 +0200] [9931] [INFO] Booting worker with pid: 9931
+[2019-06-20 12:06:34 +0200] [9933] [INFO] Booting worker with pid: 9933
+[2019-06-20 12:06:34 +0200] [9934] [INFO] Booting worker with pid: 9934
+[2019-06-20 12:09:03 +0200] [9928] [INFO] Handling signal: term
+[2019-06-20 10:09:03 +0000] [9933] [INFO] Worker exiting (pid: 9933)
+[2019-06-20 10:09:03 +0000] [9931] [INFO] Worker exiting (pid: 9931)
+[2019-06-20 10:09:03 +0000] [9934] [INFO] Worker exiting (pid: 9934)
+[2019-06-20 12:09:04 +0200] [9928] [INFO] Shutting down: Master
+[2019-06-20 12:09:04 +0200] [10042] [INFO] Starting gunicorn 19.9.0
+[2019-06-20 12:09:04 +0200] [10042] [INFO] Listening at: unix:/var/www/api.openparking.nl/openparking.sock (10042)
+[2019-06-20 12:09:04 +0200] [10042] [INFO] Using worker: sync
+[2019-06-20 12:09:04 +0200] [10045] [INFO] Booting worker with pid: 10045
+[2019-06-20 12:09:04 +0200] [10047] [INFO] Booting worker with pid: 10047
+[2019-06-20 12:09:04 +0200] [10049] [INFO] Booting worker with pid: 10049

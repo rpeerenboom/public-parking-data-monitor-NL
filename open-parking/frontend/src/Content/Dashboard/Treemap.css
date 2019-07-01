@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+rect {
+  fill: rgb(255, 255, 255);
+  opacity: 0.55;
+  padding: 8px;
+
+}
+
+rect:hover{
+  cursor: pointer;
+  font-weight:  bold;
+}
+
+svg.TreemapData {
+  height: 80vh;
+  width: 100vw;
+}
+
+
+.badBG {
+
+  fill: #d7181d;
+  opacity: 1.0;
+  stroke: white;
+}
+
+.avgBG{
+  fill: #fbc89b;
+  opacity: 1.0;
+  stroke: white;
+}
+
+.goodBG{
+  fill: #92bfdc;
+  opacity: 1.0;
+  stroke: white;
+}
+
+.labelbody {
+  margin: 2px;
+}
+.foreignObject {
+  font: 9px sans-serif;
+  text-overflow: ellipsis;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.heatCell{
+  white-space: nowrap; text-overflow:ellipsis; overflow: hidden; 
+  /*max-width:1px;*/
+  height: 26px;
+}
+
+.table th{
+  padding: 3px !important;
+  width: 100px;
+
+}
+
+.nameCell th {
+  width: 150px; 
+
+}
+
+
+
+.heatMap .table {
+  max-width: 1100px;
+}
+
+.table td {
+  border: 1px solid #eceeef;
+  font-size: 12px;
+}
+
+
+.table th {
+  font-size: 12px;
+  width: 100px;
+}
+.table .invalidCell {
+  background-color: rgb(213,94,100);
+  padding: 3px !important;
+  width: 100px;
+}
+
+.table .validCell{
+  background-color: rgb(86, 180, 233);
+  padding: 3px !important;
+  width:100px;
+}
+
+.table .maturity0{
+  background-color: rgb(255, 0, 0);
+  padding: 3px !important;
+  width:100px;
+}
+
+.table .maturity1{
+  background-color: orange;
+  padding: 3px !important;
+  width:100px;
+}
+
+.table .maturity2{
+  background-color: yellow;
+  padding: 3px !important;
+  width:100px;
+}
+
+.table .maturity3{
+  background-color: lime;
+  padding: 3px !important;
+  width:100px;
+}
+
+
+.table .heatCellName {
+  padding: 3px !important;
+  width: 150px !important;
+  white-space: nowrap; text-overflow:ellipsis; overflow: hidden
+
+}
+
+.table {
+
+  padding-top: 10px;
+  width: 1100px !important;
+  display: block;
+
+
+}
+
+.table .inactive {
+  height: 0;
+}
+
+.table .active{
+  height: 78vh;
+}
+
+thead, tbody, tr, td, th { display: block; }
+
+tr:after {
+  content: ' ';
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+
+thead th {
+  height: 30px;
+
+  /*text-align: left;*/
+}
+
+tbody {
+  height: 500px;
+  overflow-y: auto;
+}
+
+thead {
+  /* fallback */
+}
+
+
+tbody td, thead th {
+
+  float: left;
+  z-index: 5;
+}
+
+h1 {
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  float: left;
+}
+
+.nameBorderbad{
+  border-bottom: 3px solid rgb(213,94,100) !important
+
+}
+
+.nameBorderaverage{
+  border-bottom: 3px solid rgb(230, 159, 0 ) !important
+
+}
+
+.nameBordergood{
+
+  border-bottom: 3px solid rgb(86, 180, 223) !important
+}
+
+
+.heatMap{
+  margin: 3 rem !important;
+}
+
+.th-name {
+  width: 150px !important;
+}
+
+
+.dashboard-head h1 {
+  margin-left:20px;
+}
+
+.dashboard-data{
+  margin-left: 20px; 
+}
+
+.dashboard-table{
+  margin: 20px; 
+}
+
+div.tooltip {
+  position: absolute;
+  width: auto;
+  height: auto;
+  padding: 2px;
+  background: #ffff99;
+  border: solid 1px #aaa;
+  border-radius: 8px;
+}
+
+.two-buttons{
+  position: fixed;
+  top: 70px;
+  right: 330px;
+  z-index: 400;
+  float: right;
+  height: 50px;
+  text-align: left;
+}
+
+#single-button{
+  float: left;
+  margin-right: 20px;
+}
+
+thead{
+  margin-top: 69px;
+}
+
+.titel-tabel{
+  background: #d7181d !important;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  float: left;
+}

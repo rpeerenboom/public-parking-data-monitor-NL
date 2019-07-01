@@ -1,0 +1,452 @@
+import React, { Component } from 'react';
+import $ from 'jquery';
+import L from 'leaflet';
+import 'leaflet.markercluster';
+import 'leaflet.heat';
+import './MapContent.css';
+import privateIcon from './images/private-legend.png';
+
+
+class MapContent extends Component {
+
+  componentWillReceiveProps(nextProps) {
+    let main = this;
+    if (nextProps.filters !== this.props.filters) {
+      $.getJSON("//api.openparking.nl/parkingdata/rectangle/" + this.map.getBounds().toBBoxString() + "/?format=json", function (json) {
+        let facilities = json;
+        main.filterMarkers(facilities, main.cluster);
+      });
+    }
+  }
+
+  renderMap() {
+    let map = L.map('mapid', {
+      center: [52.1326, 5.2913],
+      zoom: 8
+    });
+    L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiaXNsYWQiLCJhIjoiY2pqbzZiczU0MTV5aTNxcnM5bWY1Nnp4YSJ9.C9UeB-y3MTGiU8Lv7_m5dQ', {
+      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    }).addTo(map);
+    return map;
+  }
+
+
+  filter(markersToAdd, i) {
+    let main = this;
+
+    //Ownership filters
+    if (!main.extra.includes("private") && markersToAdd[i].limitedAccess === true) {
+      delete markersToAdd[i];
+      return;
+    }
+    if (!main.extra.includes("public") && markersToAdd[i].limitedAccess === false) {
+      delete markersToAdd[i];
+      return;
+    }
+    //Facility type filters
+    if (markersToAdd[i].usage !== null) {
+      if (!main.vis.includes("parkAndRide") && markersToAdd[i].usage === "park and ride") {
+        delete markersToAdd[i];
+        return;
+      }
+      if (!main.vis.includes("garage") && markersToAdd[i].usage === "garage") {
+        delete markersToAdd[i];
+        return;
+      }
+      if (!main.vis.includes("carpool") && markersToAdd[i].usage === "carpool") {
+        delete markersToAdd[i];
+        return;
+      }
+      if (!main.vis.includes("terrain") && markersToAdd[i].usage === "terrain") {
+        delete markersToAdd[i];
+        return;
+      }
+      if (!main.vis.includes("otherPlaces") && markersToAdd[i].usage === "others") {
+        delete markersToAdd[i];
+        return;
+      }
+      if (!main.vis.includes("onstreet") && markersToAdd[i].usage === "onstreet") {
+        delete markersToAdd[i];
+        return
+      }
+    } else if (!main.vis.includes("otherPlaces")) {
+      delete markersToAdd[i];
+      return;
+    }
+
+    //information filters
+    if (this.inf["capacity"] === "false") {
+      console.log("ararar")
+    }
+
+    if (this.inf["capacity"] !== undefined) {
+      if ((main.inf["capacity"] === "true" && markersToAdd[i].capacity === null) || (main.inf["capacity"] === "false" && markersToAdd[i].capacity !== null)) {
+        delete markersToAdd[i];
+        return;
+      }
+    }
+
+    if (this.inf["tariffs"] !== undefined) {
+      if ((main.inf["tariffs"] === "true" && markersToAdd[i].tariffs === false) || (main.inf["tariffs"] === "false" && markersToAdd[i].tariffs === true)) {
+        delete markersToAdd[i];
+        return;
+      }
+    }
+
+    if (this.inf["restrictions"] !== undefined) {
+      if ((main.inf["restrictions"] === "true" && markersToAdd[i].minimumHeightInMeters === null) || (main.inf["restrictions"] === "false" && markersToAdd[i].minimumHeightInMeters !== null)) {
+        delete markersToAdd[i];
+        return;
+      }
+    }
+
+    if (this.inf["openingTimes"] !== undefined) {
+      if ((main.inf["openingTimes"] === "true" && markersToAdd[i].openingTimes === false) || (main.inf["openingTimes"] === "false" && markersToAdd[i].openingTimes === true)) {
+        delete markersToAdd[i];
+        return;
+      }
+    }
+
+    if (this.inf["contactPersons"] !== undefined) {
+      if ((main.inf["contactPersons"] === "true" && markersToAdd[i].contactPersons === false) || (main.inf["contactPersons"] === "false" && markersToAdd[i].contactPersons === true)) {
+        delete markersToAdd[i];
+        return;
+      }
+    }
+
+    if (this.inf["accessPoints"] !== undefined) {
+      if ((main.inf["accessPoints"] === "true" && markersToAdd[i].accessPoints === false) || (main.inf["accessPoints"] === "false" && markersToAdd[i].accessPoints === true)) {
+        delete markersToAdd[i];
+        return;
+      }
+    }
+
+    if (this.inf["dynamic"] !== undefined) {
+      if ((main.inf["dynamic"] === "true" && markersToAdd[i].dynamicDataUrl === null) || (main.inf["dynamic"] === "false" && markersToAdd[i].dynamicDataUrl !== null)) {
+        delete markersToAdd[i];
+        return;
+      }
+    }
+
+
+  }
+
+  filterMarkers(facilities, cluster) {
+    //Array prototype additions
+    // eslint-disable-next-line
+    Array.prototype.clean = function (deleteValue) {
+      for (let i = 0; i < this.length; i++) {
+        if (this[i] === deleteValue) {
+          this.splice(i, 1);
+          i--;
+        }
+      }
+      return this;
+    };
+    // eslint-disable-next-line
+    Array.prototype.diff = function (a) {
+      return this.filter(function (i) {
+        return a.indexOf(i) < 0;
+      });
+    };
+
+    //instantiate icons
+    let ParkingIcon = L.Icon.extend({
+      options: {
+        iconSize: [36, 36],
+        iconAnchor: [18, 36],
+        popupAnchor: [0, -36]
+      }
+    });
+    let goodIcon = new ParkingIcon({ iconUrl: require('./images/parking-good.png') });
+    let averageIcon = new ParkingIcon({ iconUrl: require('./images/parking-average.png') });
+    let badIcon = new ParkingIcon({ iconUrl: require('./images/parking-bad.png') });
+    let onStreetIcon = new ParkingIcon({ iconUrl: require('./images/parking-onstreet.png') });
+    let privateGoodIcon = new ParkingIcon({ iconUrl: require('./images/parking-private-good.png') });
+    let privateBadIcon = new ParkingIcon({ iconUrl: require('./images/parking-private-bad.png') });
+    let privateAverageIcon = new ParkingIcon({ iconUrl: require('./images/parking-private-average.png') });
+
+    //get variables of filters
+    this.vis = this.props.filters.visFacilities;
+    this.inf = this.props.filters.information;
+    this.extra = this.props.filters.extras;
+
+    let main = this;
+
+    cluster.clearLayers();
+    let markersToAdd = facilities.slice(0);
+    for (let i = 0; i < markersToAdd.length; i++) {
+      main.filter(markersToAdd, i);
+    }
+    markersToAdd.clean(undefined);
+
+    let markers = [];
+    markersToAdd.forEach(function (facility) {
+      let mark = L.marker([facility.latitude, facility.longitude]);
+      //set popup text
+      mark.bindPopup();
+      mark.on("popupopen", function () {
+        let popup = "<b>" + facility.name + "</b><br>Loading data...";
+        mark.getPopup().setContent(popup);
+
+        popup = "<b>" + facility.name + "</b>";
+        if (facility.usage !== "onstreet") {
+          if (facility.dynamicDataUrl !== undefined && facility.dynamicDataUrl !== null) {
+            //if(facility.limitedAccess === false || true===true) {
+            if(true) {
+              //$.getJSON("//api.openparking.nl/parkingdata/dynamicdata/" + facility.uuid + "/", function (data) {
+              $.getJSON("//data.openparking.nl/spaces/spaces.php?uuid=" + facility.uuid, function (data) {
+                if (data.parkingFacilityDynamicInformation !== undefined && data.parkingFacilityDynamicInformation.facilityActualStatus.parkingCapacity !== undefined) {
+                  popup += "<br>Vacant spaces: " + data.parkingFacilityDynamicInformation.facilityActualStatus.vacantSpaces;
+                }
+                popup += main.getStaticString(facility);
+                mark.getPopup().setContent(popup);
+              });
+            }else{
+              popup+=main.getStaticString(facility);
+              mark.getPopup().setContent(popup);
+            }
+          } else {
+            popup += main.getStaticString(facility);
+            mark.getPopup().setContent(popup);
+          }
+        } else {
+          popup += "<br>This is an onstreet parking spot";
+          mark.getPopup().setContent(popup);
+
+        }
+      });
+      //set the icon
+      //Disregard easter egg marker
+      if (facility.uuid !== "abcdef") {
+        if (facility.limitedAccess === false) {
+          if (facility.mark !== "onstreet") {
+            if (facility.mark === "bad") {
+              mark.setIcon(badIcon);
+            } else if (facility.mark === "average") {
+              mark.setIcon(averageIcon);
+            } else {
+              mark.setIcon(goodIcon);
+            }
+          } else {
+            mark.setIcon(onStreetIcon);
+          }
+        } else {
+          if (facility.mark === "bad") {
+            mark.setIcon(privateBadIcon);
+          } else if (facility.mark === "average") {
+            mark.setIcon(privateAverageIcon);
+          } else {
+            mark.setIcon(privateGoodIcon);
+          }
+        }
+      }
+      //add markers to array
+      markers.push(mark);
+    });
+    //add array to cluster
+    cluster.addLayers(markers);
+
+
+    this.updateHeatmapPoints(markersToAdd);
+  }
+
+  getStaticString(facility) {
+    let retString = "";
+    if (facility.uuid !== "abcdef") {
+      retString += "<br>Limited API access: " + facility.limitedAccess +
+        "<br />Location on map: (" + facility.latitude + ", " + facility.longitude + ")" +
+        "<br />Capacity: " + (facility.capacity ? "Available (" + facility.capacity + ")" : "<span className='text-danger'><b>No Capacity available</b></span>") +
+        "<br />Tariffs: " + (facility.tariffs ? "Available" : "<span className='text-danger'><b>No Tariffs available</b></span>") +
+        "<br />Min. height in meters: " + (facility.minimumHeightInMeters !== null ? "Available (" + facility.minimumHeightInMeters + ")" : "<span className='text-danger'><b>No parking restrictions available</b></span>") +
+        "<br />Opening Hours: " + (facility.openingTimes ? "Available" : "<span className='text-danger'><b>No opening hours available</b></span>") +
+        "<br />Contact Person: " + (facility.contactPersons ? "Available" : "<span className='text-danger'><b>No contact persons available</b></span>") +
+        "<br />Access points: " + (facility.accessPoints ? "Available" : "<span className='text-danger'><b>No Access points available</b></span>") +
+        "<br /><br /><a target='_blank' className='btn-sm btn-info detailButton' href='//api.openparking.nl/parkingdata/html/" + facility.uuid + "'>Go To Details</a>";
+    } else {
+      retString += "<br />Developed during Open Summer of Code 2018" +
+        "<br /><br />Markers by <br /><div>Icons made by <a href='//www.freepik.com' title='Freepik'>Freepik</a> from " +
+        "<a href='https://www.flaticon.com/' title='Flaticon'>www.flaticon.com</a> is licensed by " +
+        "<a href='//creativecommons.org/licenses/by/3.0/' title='Creative Commons BY 3.0' target='_blank'>CC 3.0 BY</a></div>" +
+        "<br /><br /><a target='_blank' className='btn-sm btn-info detailButton' href='https://osoc18.github.io/open-parking/#team'>Our team</a>";
+    }
+    return retString;
+  }
+
+  updateHeatmapPoints(facilities) {
+    if ($("#heatmap-switch input").prop("checked")) {
+
+      let heatPoints = { good: [], average: [], bad: [] };
+      if ($("#heatmap-reverse-switch input").prop("checked")) {
+        heatPoints = { bad: [], average: [], good: [] };
+      }
+      for (let i = 0; i < facilities.length; i++) {
+        if (facilities[i].mark in heatPoints) {
+          heatPoints[facilities[i].mark].push([facilities[i].latitude, facilities[i].longitude, 1]);
+        }
+      }
+      for (let mark in heatPoints) {
+        this.heatmaps[mark].setLatLngs(heatPoints[mark]);
+        this.heatmaps[mark].redraw();
+      }
+    }
+  }
+  renderHeatmap(main, facilities, cluster) {
+    let heatmapSwitch = $("#heatmap-switch input");
+    let heatmapReverseSwitch = $("#heatmap-reverse-switch input");
+    let showHeatmap = heatmapSwitch.prop("checked");
+    let reverseHeatmap = heatmapReverseSwitch.prop("checked");
+    let layers = [ "good", "average", "bad"];
+    if (reverseHeatmap) {
+      layers.reverse();
+    }
+
+    //for (let mark in main.heatmaps) {
+    for (var i = 0, len = layers.length; i < len; i++) {
+      let mark = layers[i];
+      // Remove heatmap by default, and add it if the switch is checked
+      main.map.removeLayer(main.heatmaps[mark]);
+      if (showHeatmap) {
+        main.map.addLayer(main.heatmaps[mark]);
+      }
+    }
+
+    main.filterMarkers(facilities, cluster);
+  }
+
+  componentDidMount() {
+    this.map = this.renderMap();
+    let main = this;
+    let facilities = [];
+    let cluster = L.markerClusterGroup({
+      disableClusteringAtZoom: 13
+    });
+    this.map.addLayer(cluster);
+
+    $("#layers div input").prop("checked", true);
+
+
+    $.getJSON("//api.openparking.nl/parkingdata/rectangle/" + main.map.getBounds().toBBoxString() + "/?format=json", function (json) {
+      facilities = json;
+      main.filterMarkers(facilities, cluster);
+
+    });
+
+
+    this.map.on("moveend", function () {
+      $.getJSON("//api.openparking.nl/parkingdata/rectangle/" + main.map.getBounds().toBBoxString() + "/?format=json", function (json) {
+
+        facilities = json;
+        main.filterMarkers(facilities, cluster);
+
+      });
+    });
+
+    let heatmapSwitch = $("#heatmap-switch input");
+    heatmapSwitch.on("click", function () {
+      main.renderHeatmap(main, facilities, cluster);
+    });
+
+    let heatmapReverseSwitch = $("#heatmap-reverse-switch input");
+    heatmapReverseSwitch.on("click", function () {
+      main.renderHeatmap(main, facilities, cluster);
+    });
+
+    // Create three heatmap layers, they will be populated in filterMarkers
+    // There is one layer per marker color, there is no way to do it with
+    // only one heatmap
+    let heatmapColors = [
+      ["good", "#56b4e9"],  // Sky blue
+      ["average", "#e69f00"], // Orange
+      ["bad", "#d7191c"] // Red
+    ];
+
+    this.heatmaps = {};
+    for (let i = 0; i < heatmapColors.length; i++) {
+      this.heatmaps[heatmapColors[i][0]] = L.heatLayer([], {
+        radius: 35,
+        blur: 15,
+        minOpacity: 0.6,
+        max: 1,
+        gradient: { 0: heatmapColors[i][1], 1: heatmapColors[i][1] }
+      });
+      this.heatmaps[heatmapColors[i][0]].addTo(this.map);
+    }
+    this.facilities = facilities;
+    this.cluster = cluster
+
+  }
+
+
+  render() {
+    // get visible facilities
+    //this.map.fire("moveend");
+
+
+    return (
+
+      <div id="mapParent">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+          integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+          crossOrigin="" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.3.0/dist/MarkerCluster.css" />
+
+        <div id="search-container"></div>
+
+        <div id="mapid"></div>
+
+        <div className="legend-field-map">
+          <span className="legend-label">Data availability of facilities</span>
+          <br></br>
+          <div className="legend-field-text">
+            <div id="color-and-text" data-tooltip="Conditional parking." data-tooltip-position="bottom">
+              <img id="onstreetIcon" src={privateIcon} alt="icon" width="15px" height="15px"></img>
+              <span>private</span>
+            </div>
+            <div id="color-and-text" data-tooltip="On-street parking." data-tooltip-position="bottom">
+              <div className="small-box purple"></div>
+              <span>On-street</span>
+            </div>
+            <div id="color-and-text" data-tooltip="All 6 necessary fields are filled in."
+              data-tooltip-position="bottom">
+              <div className="small-box blue"></div>
+              <span>Excellent</span>
+            </div>
+            <div id="color-and-text" data-tooltip="3, 4 or 5 fields of 6 are filled in."
+              data-tooltip-position="bottom">
+              <div className="small-box orange"></div>
+              <span>Mediocre</span>
+            </div>
+            <div id="color-and-text" data-tooltip="Less than half the fields are filled in."
+              data-tooltip-position="bottom">
+              <div className="small-box red"></div>
+              <span>Poor</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="switch-field" id="heatmap-switch">
+          <label className="heat-label">Heat view</label>
+          <div className="switch-total">
+            <label className="switch"><input type="checkbox" />
+              <div></div>
+            </label>
+          </div>
+        </div>
+        <div className="switch-reverse-field" id="heatmap-reverse-switch">
+          <label className="heat-label">Reverse heat view</label>
+          <div className="switch-total">
+            <label className="switch"><input type="checkbox" />
+              <div></div>
+            </label>
+          </div>
+        </div>
+
+      </div>
+    )
+
+
+  }
+}
+
+export default MapContent;
